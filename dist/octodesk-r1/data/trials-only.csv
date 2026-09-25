@@ -1,0 +1,10 @@
+﻿file,slot,part,assembly_bom
+coupons/01-loose-pair-NOT_SLICED.3mf,1,FIT-M-D470,EXCLUDED
+coupons/01-loose-pair-NOT_SLICED.3mf,2,FIT-F-CP12,EXCLUDED
+coupons/02-representative-NOT_SLICED.3mf,1,B-2x4,EXCLUDED
+coupons/02-representative-NOT_SLICED.3mf,2,B-2x4,EXCLUDED
+coupons/02-representative-NOT_SLICED.3mf,3,B-2x2,EXCLUDED
+coupons/02-representative-NOT_SLICED.3mf,4,B-2x2,EXCLUDED
+coupons/03-base-joint-NOT_SLICED.3mf,1,P-8x8,EXCLUDED
+coupons/03-base-joint-NOT_SLICED.3mf,2,P-8x8,EXCLUDED
+coupons/03-base-joint-NOT_SLICED.3mf,3,P-4x8,EXCLUDED

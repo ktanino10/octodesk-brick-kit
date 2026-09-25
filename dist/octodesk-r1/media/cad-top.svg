@@ -1,0 +1,231 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="707" viewBox="-19.9 -145.90000000000003 231.8 163.8">
+<rect x="-19.9" y="-145.90000000000003" width="231.8" height="163.8" fill="white"/>
+<g fill="#174a40" font-family="sans-serif" font-size="3.5"><text x="0.1" y="-139.90000000000003">R1 / TOP / mm</text></g>
+<g   fill="none"
+   stroke="rgb(0, 0, 0)"
+   stroke-linecap="butt"
+   stroke-linejoin="miter"
+   stroke-width="0.13"
+   transform="scale(1, -1)"
+  >
+<path id= "1" d=" M 0.1 31.9 L 0.1 32.1 " />
+<path id= "2" d=" M 31.9 0.1 L 32.1 0.1 " />
+<path id= "3" d=" M 63.9 31.9 L 63.9 32.1 " />
+<path id= "4" d=" M 64.1 31.9 L 64.1 32.1 " />
+<path id= "5" d=" M 95.9 0.1 L 96.1 0.1 " />
+<path id= "6" d=" M 159.9 0.1 L 160.1 0.1 " />
+<path id= "7" d=" M 191.9 31.9 L 191.9 32.1 " />
+<path id= "8" d=" M 0.1 95.9 L 0.1 96.1 " />
+<path id= "9" d=" M 31.9 127.9 L 32.1 127.9 " />
+<path id= "10" d=" M 63.9 95.9 L 63.9 96.1 " />
+<path id= "11" d=" M 64.1 95.9 L 64.1 96.1 " />
+<path id= "12" d=" M 95.9 127.9 L 96.1 127.9 " />
+<path id= "13" d=" M 159.9 127.9 L 160.1 127.9 " />
+<path id= "14" d=" M 191.9 95.9 L 191.9 96.1 " />
+<path id= "15" d=" M 0.1 0.1 L 0.1 31.9 " />
+<path id= "16" d=" M 0.1 31.9 L 31.9 31.9 " />
+<path id= "17" d=" M 0.1 0.1 L 31.9 0.1 " />
+<path id= "18" d=" M 31.9 0.1 L 31.9 31.9 " />
+<circle cx ="4" cy ="4" r ="2.4" /><circle cx ="12" cy ="4" r ="2.4" /><circle cx ="4" cy ="12" r ="2.4" /><circle cx ="12" cy ="12" r ="2.4" /><circle cx ="20" cy ="4" r ="2.4" /><circle cx ="28" cy ="4" r ="2.4" /><circle cx ="20" cy ="12" r ="2.4" /><circle cx ="28" cy ="12" r ="2.4" /><circle cx ="4" cy ="20" r ="2.4" /><circle cx ="12" cy ="20" r ="2.4" /><circle cx ="4" cy ="28" r ="2.4" /><circle cx ="12" cy ="28" r ="2.4" /><circle cx ="20" cy ="20" r ="2.4" /><circle cx ="28" cy ="20" r ="2.4" /><circle cx ="20" cy ="28" r ="2.4" /><circle cx ="28" cy ="28" r ="2.4" /><circle cx ="4" cy ="4" r ="2.15" /><circle cx ="12" cy ="4" r ="2.15" /><circle cx ="4" cy ="12" r ="2.15" /><circle cx ="12" cy ="12" r ="2.15" /><circle cx ="20" cy ="4" r ="2.15" /><circle cx ="28" cy ="4" r ="2.15" /><circle cx ="20" cy ="12" r ="2.15" /><circle cx ="28" cy ="12" r ="2.15" /><circle cx ="4" cy ="20" r ="2.15" /><circle cx ="12" cy ="20" r ="2.15" /><circle cx ="4" cy ="28" r ="2.15" /><circle cx ="12" cy ="28" r ="2.15" /><circle cx ="20" cy ="20" r ="2.15" /><circle cx ="28" cy ="20" r ="2.15" /><circle cx ="20" cy ="28" r ="2.15" /><circle cx ="28" cy ="28" r ="2.15" /><path id= "51" d=" M 95.9 0.1 L 32.1 0.1 " />
+<path id= "52" d=" M 32.1 0.1 L 32.1 31.9 " />
+<path id= "53" d=" M 95.9 0.1 L 95.9 24.1 " />
+<path id= "54" d=" M 88.1 31.9 L 32.1 31.9 " />
+<circle cx ="92" cy ="4" r ="2.4" /><circle cx ="84" cy ="4" r ="2.4" /><circle cx ="92" cy ="12" r ="2.4" /><circle cx ="84" cy ="12" r ="2.4" /><circle cx ="76" cy ="4" r ="2.4" /><circle cx ="68" cy ="4" r ="2.4" /><circle cx ="76" cy ="12" r ="2.4" /><circle cx ="68" cy ="12" r ="2.4" /><circle cx ="92" cy ="20" r ="2.4" /><circle cx ="84" cy ="20" r ="2.4" /><circle cx ="84" cy ="28" r ="2.4" /><circle cx ="76" cy ="20" r ="2.4" /><circle cx ="68" cy ="20" r ="2.4" /><circle cx ="76" cy ="28" r ="2.4" /><circle cx ="68" cy ="28" r ="2.4" /><circle cx ="60" cy ="4" r ="2.4" /><circle cx ="52" cy ="4" r ="2.4" /><circle cx ="60" cy ="12" r ="2.4" /><circle cx ="52" cy ="12" r ="2.4" /><circle cx ="44" cy ="4" r ="2.4" /><circle cx ="36" cy ="4" r ="2.4" /><circle cx ="44" cy ="12" r ="2.4" /><circle cx ="36" cy ="12" r ="2.4" /><circle cx ="60" cy ="20" r ="2.4" /><circle cx ="52" cy ="20" r ="2.4" /><circle cx ="60" cy ="28" r ="2.4" /><circle cx ="52" cy ="28" r ="2.4" /><circle cx ="44" cy ="20" r ="2.4" /><circle cx ="36" cy ="20" r ="2.4" /><circle cx ="44" cy ="28" r ="2.4" /><circle cx ="36" cy ="28" r ="2.4" /><circle cx ="92" cy ="4" r ="2.15" /><circle cx ="84" cy ="4" r ="2.15" /><circle cx ="92" cy ="12" r ="2.15" /><circle cx ="84" cy ="12" r ="2.15" /><circle cx ="76" cy ="4" r ="2.15" /><circle cx ="68" cy ="4" r ="2.15" /><circle cx ="76" cy ="12" r ="2.15" /><circle cx ="68" cy ="12" r ="2.15" /><circle cx ="92" cy ="20" r ="2.15" /><circle cx ="84" cy ="20" r ="2.15" /><circle cx ="84" cy ="28" r ="2.15" /><circle cx ="76" cy ="20" r ="2.15" /><circle cx ="68" cy ="20" r ="2.15" /><circle cx ="76" cy ="28" r ="2.15" /><circle cx ="68" cy ="28" r ="2.15" /><circle cx ="60" cy ="4" r ="2.15" /><circle cx ="52" cy ="4" r ="2.15" /><circle cx ="60" cy ="12" r ="2.15" /><circle cx ="52" cy ="12" r ="2.15" /><circle cx ="44" cy ="4" r ="2.15" /><circle cx ="36" cy ="4" r ="2.15" /><circle cx ="44" cy ="12" r ="2.15" /><circle cx ="36" cy ="12" r ="2.15" /><circle cx ="60" cy ="20" r ="2.15" /><circle cx ="52" cy ="20" r ="2.15" /><circle cx ="60" cy ="28" r ="2.15" /><circle cx ="52" cy ="28" r ="2.15" /><circle cx ="44" cy ="20" r ="2.15" /><circle cx ="36" cy ="20" r ="2.15" /><circle cx ="44" cy ="28" r ="2.15" /><circle cx ="36" cy ="28" r ="2.15" /><path id= "117" d=" M 159.9 0.1 L 96.1 0.1 " />
+<path id= "118" d=" M 96.1 0.1 L 96.1 24.1 " />
+<path id= "119" d=" M 159.9 0.1 L 159.9 24.1 " />
+<circle cx ="156" cy ="4" r ="2.4" /><circle cx ="148" cy ="4" r ="2.4" /><circle cx ="156" cy ="12" r ="2.4" /><circle cx ="148" cy ="12" r ="2.4" /><circle cx ="140" cy ="4" r ="2.4" /><circle cx ="132" cy ="4" r ="2.4" /><circle cx ="140" cy ="12" r ="2.4" /><circle cx ="132" cy ="12" r ="2.4" /><circle cx ="156" cy ="20" r ="2.4" /><circle cx ="148" cy ="20" r ="2.4" /><circle cx ="140" cy ="20" r ="2.4" /><circle cx ="132" cy ="20" r ="2.4" /><circle cx ="124" cy ="4" r ="2.4" /><circle cx ="116" cy ="4" r ="2.4" /><circle cx ="124" cy ="12" r ="2.4" /><circle cx ="116" cy ="12" r ="2.4" /><circle cx ="108" cy ="4" r ="2.4" /><circle cx ="100" cy ="4" r ="2.4" /><circle cx ="108" cy ="12" r ="2.4" /><circle cx ="100" cy ="12" r ="2.4" /><circle cx ="124" cy ="20" r ="2.4" /><circle cx ="116" cy ="20" r ="2.4" /><circle cx ="108" cy ="20" r ="2.4" /><circle cx ="100" cy ="20" r ="2.4" /><circle cx ="156" cy ="4" r ="2.15" /><circle cx ="148" cy ="4" r ="2.15" /><circle cx ="156" cy ="12" r ="2.15" /><circle cx ="148" cy ="12" r ="2.15" /><circle cx ="140" cy ="4" r ="2.15" /><circle cx ="132" cy ="4" r ="2.15" /><circle cx ="140" cy ="12" r ="2.15" /><circle cx ="132" cy ="12" r ="2.15" /><circle cx ="156" cy ="20" r ="2.15" /><circle cx ="148" cy ="20" r ="2.15" /><circle cx ="140" cy ="20" r ="2.15" /><circle cx ="132" cy ="20" r ="2.15" /><circle cx ="124" cy ="4" r ="2.15" /><circle cx ="116" cy ="4" r ="2.15" /><circle cx ="124" cy ="12" r ="2.15" /><circle cx ="116" cy ="12" r ="2.15" /><circle cx ="108" cy ="4" r ="2.15" /><circle cx ="100" cy ="4" r ="2.15" /><circle cx ="108" cy ="12" r ="2.15" /><circle cx ="100" cy ="12" r ="2.15" /><circle cx ="124" cy ="20" r ="2.15" /><circle cx ="116" cy ="20" r ="2.15" /><circle cx ="108" cy ="20" r ="2.15" /><circle cx ="100" cy ="20" r ="2.15" /><path id= "168" d=" M 160.1 0.1 L 160.1 24.1 " />
+<path id= "169" d=" M 183.9 31.9 L 191.9 31.9 " />
+<path id= "170" d=" M 160.1 0.1 L 191.9 0.1 " />
+<path id= "171" d=" M 191.9 0.1 L 191.9 31.9 " />
+<circle cx ="164" cy ="4" r ="2.4" /><circle cx ="172" cy ="4" r ="2.4" /><circle cx ="164" cy ="12" r ="2.4" /><circle cx ="172" cy ="12" r ="2.4" /><circle cx ="180" cy ="4" r ="2.4" /><circle cx ="188" cy ="4" r ="2.4" /><circle cx ="180" cy ="12" r ="2.4" /><circle cx ="188" cy ="12" r ="2.4" /><circle cx ="164" cy ="20" r ="2.4" /><circle cx ="172" cy ="20" r ="2.4" /><circle cx ="180" cy ="20" r ="2.4" /><circle cx ="188" cy ="20" r ="2.4" /><circle cx ="188" cy ="28" r ="2.4" /><circle cx ="164" cy ="4" r ="2.15" /><circle cx ="172" cy ="4" r ="2.15" /><circle cx ="164" cy ="12" r ="2.15" /><circle cx ="172" cy ="12" r ="2.15" /><circle cx ="180" cy ="4" r ="2.15" /><circle cx ="188" cy ="4" r ="2.15" /><circle cx ="180" cy ="12" r ="2.15" /><circle cx ="188" cy ="12" r ="2.15" /><circle cx ="164" cy ="20" r ="2.15" /><circle cx ="172" cy ="20" r ="2.15" /><circle cx ="180" cy ="20" r ="2.15" /><circle cx ="188" cy ="20" r ="2.15" /><circle cx ="188" cy ="28" r ="2.15" /><path id= "198" d=" M 0.1 32.1 L 0.1 95.9 " />
+<path id= "199" d=" M 0.1 95.9 L 24.1 95.9 " />
+<path id= "200" d=" M 0.1 32.1 L 24.1 32.1 " />
+<circle cx ="4" cy ="36" r ="2.4" /><circle cx ="4" cy ="44" r ="2.4" /><circle cx ="12" cy ="36" r ="2.4" /><circle cx ="12" cy ="44" r ="2.4" /><circle cx ="4" cy ="52" r ="2.4" /><circle cx ="4" cy ="60" r ="2.4" /><circle cx ="12" cy ="52" r ="2.4" /><circle cx ="12" cy ="60" r ="2.4" /><circle cx ="20" cy ="36" r ="2.4" /><circle cx ="20" cy ="44" r ="2.4" /><circle cx ="20" cy ="52" r ="2.4" /><circle cx ="20" cy ="60" r ="2.4" /><circle cx ="4" cy ="68" r ="2.4" /><circle cx ="4" cy ="76" r ="2.4" /><circle cx ="12" cy ="68" r ="2.4" /><circle cx ="12" cy ="76" r ="2.4" /><circle cx ="4" cy ="84" r ="2.4" /><circle cx ="4" cy ="92" r ="2.4" /><circle cx ="12" cy ="84" r ="2.4" /><circle cx ="12" cy ="92" r ="2.4" /><circle cx ="20" cy ="68" r ="2.4" /><circle cx ="20" cy ="76" r ="2.4" /><circle cx ="20" cy ="84" r ="2.4" /><circle cx ="20" cy ="92" r ="2.4" /><circle cx ="4" cy ="36" r ="2.15" /><circle cx ="4" cy ="44" r ="2.15" /><circle cx ="12" cy ="36" r ="2.15" /><circle cx ="12" cy ="44" r ="2.15" /><circle cx ="4" cy ="52" r ="2.15" /><circle cx ="4" cy ="60" r ="2.15" /><circle cx ="12" cy ="52" r ="2.15" /><circle cx ="12" cy ="60" r ="2.15" /><circle cx ="20" cy ="36" r ="2.15" /><circle cx ="20" cy ="44" r ="2.15" /><circle cx ="20" cy ="52" r ="2.15" /><circle cx ="20" cy ="60" r ="2.15" /><circle cx ="4" cy ="68" r ="2.15" /><circle cx ="4" cy ="76" r ="2.15" /><circle cx ="12" cy ="68" r ="2.15" /><circle cx ="12" cy ="76" r ="2.15" /><circle cx ="4" cy ="84" r ="2.15" /><circle cx ="4" cy ="92" r ="2.15" /><circle cx ="12" cy ="84" r ="2.15" /><circle cx ="12" cy ="92" r ="2.15" /><circle cx ="20" cy ="68" r ="2.15" /><circle cx ="20" cy ="76" r ="2.15" /><circle cx ="20" cy ="84" r ="2.15" /><circle cx ="20" cy ="92" r ="2.15" /><path id= "249" d=" M 87.9 95.9 L 88.1 95.9 " />
+<path id= "250" d=" M 183.9 95.9 L 191.9 95.9 " />
+<path id= "251" d=" M 183.9 32.1 L 191.9 32.1 " />
+<path id= "252" d=" M 191.9 32.1 L 191.9 95.9 " />
+<circle cx ="188" cy ="36" r ="2.4" /><circle cx ="188" cy ="44" r ="2.4" /><circle cx ="188" cy ="52" r ="2.4" /><circle cx ="188" cy ="60" r ="2.4" /><circle cx ="188" cy ="68" r ="2.4" /><circle cx ="188" cy ="76" r ="2.4" /><circle cx ="188" cy ="84" r ="2.4" /><circle cx ="188" cy ="92" r ="2.4" /><circle cx ="188" cy ="36" r ="2.15" /><circle cx ="188" cy ="44" r ="2.15" /><circle cx ="188" cy ="52" r ="2.15" /><circle cx ="188" cy ="60" r ="2.15" /><circle cx ="188" cy ="68" r ="2.15" /><circle cx ="188" cy ="76" r ="2.15" /><circle cx ="188" cy ="84" r ="2.15" /><circle cx ="188" cy ="92" r ="2.15" /><path id= "269" d=" M 0.1 96.1 L 0.1 127.9 " />
+<path id= "270" d=" M 0.1 127.9 L 31.9 127.9 " />
+<path id= "271" d=" M 0.1 96.1 L 31.9 96.1 " />
+<path id= "272" d=" M 31.9 96.1 L 31.9 127.9 " />
+<circle cx ="4" cy ="100" r ="2.4" /><circle cx ="12" cy ="100" r ="2.4" /><circle cx ="4" cy ="108" r ="2.4" /><circle cx ="12" cy ="108" r ="2.4" /><circle cx ="20" cy ="100" r ="2.4" /><circle cx ="28" cy ="100" r ="2.4" /><circle cx ="20" cy ="108" r ="2.4" /><circle cx ="28" cy ="108" r ="2.4" /><circle cx ="4" cy ="116" r ="2.4" /><circle cx ="12" cy ="116" r ="2.4" /><circle cx ="4" cy ="124" r ="2.4" /><circle cx ="12" cy ="124" r ="2.4" /><circle cx ="20" cy ="116" r ="2.4" /><circle cx ="28" cy ="116" r ="2.4" /><circle cx ="20" cy ="124" r ="2.4" /><circle cx ="28" cy ="124" r ="2.4" /><circle cx ="4" cy ="100" r ="2.15" /><circle cx ="12" cy ="100" r ="2.15" /><circle cx ="4" cy ="108" r ="2.15" /><circle cx ="12" cy ="108" r ="2.15" /><circle cx ="20" cy ="100" r ="2.15" /><circle cx ="28" cy ="100" r ="2.15" /><circle cx ="20" cy ="108" r ="2.15" /><circle cx ="28" cy ="108" r ="2.15" /><circle cx ="4" cy ="116" r ="2.15" /><circle cx ="12" cy ="116" r ="2.15" /><circle cx ="4" cy ="124" r ="2.15" /><circle cx ="12" cy ="124" r ="2.15" /><circle cx ="20" cy ="116" r ="2.15" /><circle cx ="28" cy ="116" r ="2.15" /><circle cx ="20" cy ="124" r ="2.15" /><circle cx ="28" cy ="124" r ="2.15" /><path id= "305" d=" M 88.1 96.1 L 32.1 96.1 " />
+<path id= "306" d=" M 32.1 96.1 L 32.1 127.9 " />
+<path id= "307" d=" M 95.9 103.9 L 95.9 127.9 " />
+<path id= "308" d=" M 95.9 127.9 L 32.1 127.9 " />
+<circle cx ="84" cy ="100" r ="2.4" /><circle cx ="92" cy ="108" r ="2.4" /><circle cx ="84" cy ="108" r ="2.4" /><circle cx ="76" cy ="100" r ="2.4" /><circle cx ="68" cy ="100" r ="2.4" /><circle cx ="76" cy ="108" r ="2.4" /><circle cx ="68" cy ="108" r ="2.4" /><circle cx ="92" cy ="116" r ="2.4" /><circle cx ="84" cy ="116" r ="2.4" /><circle cx ="92" cy ="124" r ="2.4" /><circle cx ="84" cy ="124" r ="2.4" /><circle cx ="76" cy ="116" r ="2.4" /><circle cx ="68" cy ="116" r ="2.4" /><circle cx ="76" cy ="124" r ="2.4" /><circle cx ="68" cy ="124" r ="2.4" /><circle cx ="60" cy ="100" r ="2.4" /><circle cx ="52" cy ="100" r ="2.4" /><circle cx ="60" cy ="108" r ="2.4" /><circle cx ="52" cy ="108" r ="2.4" /><circle cx ="44" cy ="100" r ="2.4" /><circle cx ="36" cy ="100" r ="2.4" /><circle cx ="44" cy ="108" r ="2.4" /><circle cx ="36" cy ="108" r ="2.4" /><circle cx ="60" cy ="116" r ="2.4" /><circle cx ="52" cy ="116" r ="2.4" /><circle cx ="60" cy ="124" r ="2.4" /><circle cx ="52" cy ="124" r ="2.4" /><circle cx ="44" cy ="116" r ="2.4" /><circle cx ="36" cy ="116" r ="2.4" /><circle cx ="44" cy ="124" r ="2.4" /><circle cx ="36" cy ="124" r ="2.4" /><circle cx ="84" cy ="100" r ="2.15" /><circle cx ="92" cy ="108" r ="2.15" /><circle cx ="84" cy ="108" r ="2.15" /><circle cx ="76" cy ="100" r ="2.15" /><circle cx ="68" cy ="100" r ="2.15" /><circle cx ="76" cy ="108" r ="2.15" /><circle cx ="68" cy ="108" r ="2.15" /><circle cx ="92" cy ="116" r ="2.15" /><circle cx ="84" cy ="116" r ="2.15" /><circle cx ="92" cy ="124" r ="2.15" /><circle cx ="84" cy ="124" r ="2.15" /><circle cx ="76" cy ="116" r ="2.15" /><circle cx ="68" cy ="116" r ="2.15" /><circle cx ="76" cy ="124" r ="2.15" /><circle cx ="68" cy ="124" r ="2.15" /><circle cx ="60" cy ="100" r ="2.15" /><circle cx ="52" cy ="100" r ="2.15" /><circle cx ="60" cy ="108" r ="2.15" /><circle cx ="52" cy ="108" r ="2.15" /><circle cx ="44" cy ="100" r ="2.15" /><circle cx ="36" cy ="100" r ="2.15" /><circle cx ="44" cy ="108" r ="2.15" /><circle cx ="36" cy ="108" r ="2.15" /><circle cx ="60" cy ="116" r ="2.15" /><circle cx ="52" cy ="116" r ="2.15" /><circle cx ="60" cy ="124" r ="2.15" /><circle cx ="52" cy ="124" r ="2.15" /><circle cx ="44" cy ="116" r ="2.15" /><circle cx ="36" cy ="116" r ="2.15" /><circle cx ="44" cy ="124" r ="2.15" /><circle cx ="36" cy ="124" r ="2.15" /><path id= "371" d=" M 96.1 103.9 L 96.1 127.9 " />
+<path id= "372" d=" M 159.9 103.9 L 159.9 127.9 " />
+<path id= "373" d=" M 159.9 127.9 L 96.1 127.9 " />
+<circle cx ="156" cy ="108" r ="2.4" /><circle cx ="148" cy ="108" r ="2.4" /><circle cx ="140" cy ="108" r ="2.4" /><circle cx ="132" cy ="108" r ="2.4" /><circle cx ="156" cy ="116" r ="2.4" /><circle cx ="148" cy ="116" r ="2.4" /><circle cx ="156" cy ="124" r ="2.4" /><circle cx ="148" cy ="124" r ="2.4" /><circle cx ="140" cy ="116" r ="2.4" /><circle cx ="132" cy ="116" r ="2.4" /><circle cx ="140" cy ="124" r ="2.4" /><circle cx ="132" cy ="124" r ="2.4" /><circle cx ="124" cy ="108" r ="2.4" /><circle cx ="116" cy ="108" r ="2.4" /><circle cx ="108" cy ="108" r ="2.4" /><circle cx ="100" cy ="108" r ="2.4" /><circle cx ="124" cy ="116" r ="2.4" /><circle cx ="116" cy ="116" r ="2.4" /><circle cx ="124" cy ="124" r ="2.4" /><circle cx ="116" cy ="124" r ="2.4" /><circle cx ="108" cy ="116" r ="2.4" /><circle cx ="100" cy ="116" r ="2.4" /><circle cx ="108" cy ="124" r ="2.4" /><circle cx ="100" cy ="124" r ="2.4" /><circle cx ="156" cy ="108" r ="2.15" /><circle cx ="148" cy ="108" r ="2.15" /><circle cx ="140" cy ="108" r ="2.15" /><circle cx ="132" cy ="108" r ="2.15" /><circle cx ="156" cy ="116" r ="2.15" /><circle cx ="148" cy ="116" r ="2.15" /><circle cx ="156" cy ="124" r ="2.15" /><circle cx ="148" cy ="124" r ="2.15" /><circle cx ="140" cy ="116" r ="2.15" /><circle cx ="132" cy ="116" r ="2.15" /><circle cx ="140" cy ="124" r ="2.15" /><circle cx ="132" cy ="124" r ="2.15" /><circle cx ="124" cy ="108" r ="2.15" /><circle cx ="116" cy ="108" r ="2.15" /><circle cx ="108" cy ="108" r ="2.15" /><circle cx ="100" cy ="108" r ="2.15" /><circle cx ="124" cy ="116" r ="2.15" /><circle cx ="116" cy ="116" r ="2.15" /><circle cx ="124" cy ="124" r ="2.15" /><circle cx ="116" cy ="124" r ="2.15" /><circle cx ="108" cy ="116" r ="2.15" /><circle cx ="100" cy ="116" r ="2.15" /><circle cx ="108" cy ="124" r ="2.15" /><circle cx ="100" cy ="124" r ="2.15" /><path id= "422" d=" M 160.1 103.9 L 160.1 127.9 " />
+<path id= "423" d=" M 160.1 127.9 L 191.9 127.9 " />
+<path id= "424" d=" M 183.9 96.1 L 191.9 96.1 " />
+<path id= "425" d=" M 191.9 96.1 L 191.9 127.9 " />
+<circle cx ="164" cy ="108" r ="2.4" /><circle cx ="172" cy ="108" r ="2.4" /><circle cx ="188" cy ="100" r ="2.4" /><circle cx ="180" cy ="108" r ="2.4" /><circle cx ="188" cy ="108" r ="2.4" /><circle cx ="164" cy ="116" r ="2.4" /><circle cx ="172" cy ="116" r ="2.4" /><circle cx ="164" cy ="124" r ="2.4" /><circle cx ="172" cy ="124" r ="2.4" /><circle cx ="180" cy ="116" r ="2.4" /><circle cx ="188" cy ="116" r ="2.4" /><circle cx ="180" cy ="124" r ="2.4" /><circle cx ="188" cy ="124" r ="2.4" /><circle cx ="164" cy ="108" r ="2.15" /><circle cx ="172" cy ="108" r ="2.15" /><circle cx ="188" cy ="100" r ="2.15" /><circle cx ="180" cy ="108" r ="2.15" /><circle cx ="188" cy ="108" r ="2.15" /><circle cx ="164" cy ="116" r ="2.15" /><circle cx ="172" cy ="116" r ="2.15" /><circle cx ="164" cy ="124" r ="2.15" /><circle cx ="172" cy ="124" r ="2.15" /><circle cx ="180" cy ="116" r ="2.15" /><circle cx ="188" cy ="116" r ="2.15" /><circle cx ="180" cy ="124" r ="2.15" /><circle cx ="188" cy ="124" r ="2.15" /><path id= "452" d=" M 80.1 32.1 L 39.9 32.1 " />
+<path id= "453" d=" M 40.1 63.9 L 39.9 63.9 " />
+<circle cx ="76" cy ="36" r ="2.4" /><circle cx ="68" cy ="36" r ="2.4" /><circle cx ="60" cy ="36" r ="2.4" /><circle cx ="52" cy ="36" r ="2.4" /><circle cx ="44" cy ="36" r ="2.4" /><circle cx ="76" cy ="36" r ="2.15" /><circle cx ="68" cy ="36" r ="2.15" /><circle cx ="60" cy ="36" r ="2.15" /><circle cx ="52" cy ="36" r ="2.15" /><circle cx ="44" cy ="36" r ="2.15" /><path id= "464" d=" M 40.1 64.1 L 39.9 64.1 " />
+<path id= "465" d=" M 87.9 87.9 L 87.9 95.9 " />
+<path id= "466" d=" M 87.9 95.9 L 39.9 95.9 " />
+<circle cx ="84" cy ="92" r ="2.4" /><circle cx ="76" cy ="92" r ="2.4" /><circle cx ="68" cy ="92" r ="2.4" /><circle cx ="60" cy ="92" r ="2.4" /><circle cx ="52" cy ="92" r ="2.4" /><circle cx ="44" cy ="92" r ="2.4" /><circle cx ="84" cy ="92" r ="2.15" /><circle cx ="76" cy ="92" r ="2.15" /><circle cx ="68" cy ="92" r ="2.15" /><circle cx ="60" cy ="92" r ="2.15" /><circle cx ="52" cy ="92" r ="2.15" /><circle cx ="44" cy ="92" r ="2.15" /><path id= "479" d=" M 24.1 32.1 L 24.1 95.9 " />
+<path id= "480" d=" M 24.1 32.1 L 39.9 32.1 " />
+<path id= "481" d=" M 24.1 95.9 L 39.9 95.9 " />
+<path id= "482" d=" M 39.9 32.1 L 39.9 95.9 " />
+<path id= "483" d=" M 88.1 55.9 L 88.1 56.1 " />
+<path id= "484" d=" M 88.1 87.9 L 88.1 88.1 " />
+<path id= "485" d=" M 119.9 87.9 L 119.9 88.1 " />
+<path id= "486" d=" M 120.1 55.9 L 120.1 56.1 " />
+<path id= "487" d=" M 120.1 87.9 L 120.1 88.1 " />
+<path id= "488" d=" M 135.9 103.9 L 136.1 103.9 " />
+<path id= "489" d=" M 135.9 24.1 L 136.1 24.1 " />
+<path id= "490" d=" M 183.9 55.9 L 183.9 56.1 " />
+<path id= "491" d=" M 183.9 87.9 L 183.9 88.1 " />
+<path id= "492" d=" M 135.9 24.1 L 88.1 24.1 " />
+<path id= "493" d=" M 88.1 24.1 L 88.1 32.1 " />
+<path id= "494" d=" M 135.9 24.1 L 135.9 55.9 " />
+<path id= "495" d=" M 135.9 55.9 L 119.9 55.9 " />
+<path id= "496" d=" M 104.1 55.9 L 95.9 55.9 " />
+<circle cx ="132" cy ="28" r ="2.4" /><circle cx ="124" cy ="28" r ="2.4" /><circle cx ="132" cy ="36" r ="2.4" /><circle cx ="124" cy ="36" r ="2.4" /><circle cx ="116" cy ="28" r ="2.4" /><circle cx ="116" cy ="36" r ="2.4" /><circle cx ="132" cy ="44" r ="2.4" /><circle cx ="124" cy ="44" r ="2.4" /><circle cx ="132" cy ="52" r ="2.4" /><circle cx ="124" cy ="52" r ="2.4" /><circle cx ="108" cy ="28" r ="2.4" /><circle cx ="108" cy ="36" r ="2.4" /><circle cx ="100" cy ="28" r ="2.4" /><circle cx ="92" cy ="28" r ="2.4" /><circle cx ="100" cy ="36" r ="2.4" /><circle cx ="100" cy ="44" r ="2.4" /><circle cx ="100" cy ="52" r ="2.4" /><circle cx ="132" cy ="28" r ="2.15" /><circle cx ="124" cy ="28" r ="2.15" /><circle cx ="132" cy ="36" r ="2.15" /><circle cx ="124" cy ="36" r ="2.15" /><circle cx ="116" cy ="28" r ="2.15" /><circle cx ="116" cy ="36" r ="2.15" /><circle cx ="132" cy ="44" r ="2.15" /><circle cx ="124" cy ="44" r ="2.15" /><circle cx ="132" cy ="52" r ="2.15" /><circle cx ="124" cy ="52" r ="2.15" /><circle cx ="108" cy ="28" r ="2.15" /><circle cx ="108" cy ="36" r ="2.15" /><circle cx ="100" cy ="28" r ="2.15" /><circle cx ="92" cy ="28" r ="2.15" /><circle cx ="100" cy ="36" r ="2.15" /><circle cx ="100" cy ="44" r ="2.15" /><circle cx ="100" cy ="52" r ="2.15" /><path id= "531" d=" M 135.9 56.1 L 119.9 56.1 " />
+<path id= "532" d=" M 104.1 56.1 L 88.1 56.1 " />
+<path id= "533" d=" M 88.1 56.1 L 88.1 72.1 " />
+<path id= "534" d=" M 135.9 56.1 L 135.9 87.9 " />
+<path id= "535" d=" M 135.9 87.9 L 119.9 87.9 " />
+<path id= "536" d=" M 104.1 87.9 L 95.9 87.9 " />
+<circle cx ="132" cy ="60" r ="2.4" /><circle cx ="124" cy ="60" r ="2.4" /><circle cx ="132" cy ="68" r ="2.4" /><circle cx ="124" cy ="68" r ="2.4" /><circle cx ="132" cy ="76" r ="2.4" /><circle cx ="124" cy ="76" r ="2.4" /><circle cx ="132" cy ="84" r ="2.4" /><circle cx ="124" cy ="84" r ="2.4" /><circle cx ="100" cy ="60" r ="2.4" /><circle cx ="92" cy ="60" r ="2.4" /><circle cx ="100" cy ="68" r ="2.4" /><circle cx ="92" cy ="68" r ="2.4" /><circle cx ="100" cy ="76" r ="2.4" /><circle cx ="100" cy ="84" r ="2.4" /><circle cx ="132" cy ="60" r ="2.15" /><circle cx ="124" cy ="60" r ="2.15" /><circle cx ="132" cy ="68" r ="2.15" /><circle cx ="124" cy ="68" r ="2.15" /><circle cx ="132" cy ="76" r ="2.15" /><circle cx ="124" cy ="76" r ="2.15" /><circle cx ="132" cy ="84" r ="2.15" /><circle cx ="124" cy ="84" r ="2.15" /><circle cx ="100" cy ="60" r ="2.15" /><circle cx ="92" cy ="60" r ="2.15" /><circle cx ="100" cy ="68" r ="2.15" /><circle cx ="92" cy ="68" r ="2.15" /><circle cx ="100" cy ="76" r ="2.15" /><circle cx ="100" cy ="84" r ="2.15" /><path id= "565" d=" M 135.9 88.1 L 88.1 88.1 " />
+<path id= "566" d=" M 135.9 88.1 L 135.9 103.9 " />
+<path id= "567" d=" M 88.1 88.1 L 88.1 103.9 " />
+<path id= "568" d=" M 135.9 103.9 L 88.1 103.9 " />
+<circle cx ="132" cy ="92" r ="2.4" /><circle cx ="124" cy ="92" r ="2.4" /><circle cx ="116" cy ="92" r ="2.4" /><circle cx ="132" cy ="100" r ="2.4" /><circle cx ="124" cy ="100" r ="2.4" /><circle cx ="116" cy ="100" r ="2.4" /><circle cx ="108" cy ="92" r ="2.4" /><circle cx ="100" cy ="92" r ="2.4" /><circle cx ="92" cy ="92" r ="2.4" /><circle cx ="108" cy ="100" r ="2.4" /><circle cx ="100" cy ="100" r ="2.4" /><circle cx ="92" cy ="100" r ="2.4" /><circle cx ="132" cy ="92" r ="2.15" /><circle cx ="124" cy ="92" r ="2.15" /><circle cx ="116" cy ="92" r ="2.15" /><circle cx ="132" cy ="100" r ="2.15" /><circle cx ="124" cy ="100" r ="2.15" /><circle cx ="116" cy ="100" r ="2.15" /><circle cx ="108" cy ="92" r ="2.15" /><circle cx ="100" cy ="92" r ="2.15" /><circle cx ="92" cy ="92" r ="2.15" /><circle cx ="108" cy ="100" r ="2.15" /><circle cx ="100" cy ="100" r ="2.15" /><circle cx ="92" cy ="100" r ="2.15" /><path id= "593" d=" M 183.9 24.1 L 136.1 24.1 " />
+<path id= "594" d=" M 136.1 24.1 L 136.1 55.9 " />
+<path id= "595" d=" M 183.9 24.1 L 183.9 55.9 " />
+<path id= "596" d=" M 183.9 55.9 L 159.9 55.9 " />
+<path id= "597" d=" M 144.1 55.9 L 136.1 55.9 " />
+<circle cx ="180" cy ="28" r ="2.4" /><circle cx ="172" cy ="28" r ="2.4" /><circle cx ="180" cy ="36" r ="2.4" /><circle cx ="172" cy ="36" r ="2.4" /><circle cx ="164" cy ="28" r ="2.4" /><circle cx ="164" cy ="36" r ="2.4" /><circle cx ="180" cy ="44" r ="2.4" /><circle cx ="172" cy ="44" r ="2.4" /><circle cx ="180" cy ="52" r ="2.4" /><circle cx ="172" cy ="52" r ="2.4" /><circle cx ="164" cy ="44" r ="2.4" /><circle cx ="164" cy ="52" r ="2.4" /><circle cx ="156" cy ="28" r ="2.4" /><circle cx ="148" cy ="28" r ="2.4" /><circle cx ="140" cy ="28" r ="2.4" /><circle cx ="140" cy ="36" r ="2.4" /><circle cx ="140" cy ="44" r ="2.4" /><circle cx ="140" cy ="52" r ="2.4" /><circle cx ="180" cy ="28" r ="2.15" /><circle cx ="172" cy ="28" r ="2.15" /><circle cx ="180" cy ="36" r ="2.15" /><circle cx ="172" cy ="36" r ="2.15" /><circle cx ="164" cy ="28" r ="2.15" /><circle cx ="164" cy ="36" r ="2.15" /><circle cx ="180" cy ="44" r ="2.15" /><circle cx ="172" cy ="44" r ="2.15" /><circle cx ="180" cy ="52" r ="2.15" /><circle cx ="172" cy ="52" r ="2.15" /><circle cx ="164" cy ="44" r ="2.15" /><circle cx ="164" cy ="52" r ="2.15" /><circle cx ="156" cy ="28" r ="2.15" /><circle cx ="148" cy ="28" r ="2.15" /><circle cx ="140" cy ="28" r ="2.15" /><circle cx ="140" cy ="36" r ="2.15" /><circle cx ="140" cy ="44" r ="2.15" /><circle cx ="140" cy ="52" r ="2.15" /><path id= "634" d=" M 183.9 56.1 L 159.9 56.1 " />
+<path id= "635" d=" M 144.1 56.1 L 136.1 56.1 " />
+<path id= "636" d=" M 136.1 56.1 L 136.1 87.9 " />
+<path id= "637" d=" M 183.9 56.1 L 183.9 87.9 " />
+<path id= "638" d=" M 183.9 87.9 L 159.9 87.9 " />
+<path id= "639" d=" M 144.1 87.9 L 136.1 87.9 " />
+<circle cx ="180" cy ="60" r ="2.4" /><circle cx ="172" cy ="60" r ="2.4" /><circle cx ="180" cy ="68" r ="2.4" /><circle cx ="172" cy ="68" r ="2.4" /><circle cx ="164" cy ="60" r ="2.4" /><circle cx ="164" cy ="68" r ="2.4" /><circle cx ="180" cy ="76" r ="2.4" /><circle cx ="172" cy ="76" r ="2.4" /><circle cx ="180" cy ="84" r ="2.4" /><circle cx ="172" cy ="84" r ="2.4" /><circle cx ="164" cy ="76" r ="2.4" /><circle cx ="164" cy ="84" r ="2.4" /><circle cx ="140" cy ="60" r ="2.4" /><circle cx ="140" cy ="68" r ="2.4" /><circle cx ="140" cy ="76" r ="2.4" /><circle cx ="140" cy ="84" r ="2.4" /><circle cx ="180" cy ="60" r ="2.15" /><circle cx ="172" cy ="60" r ="2.15" /><circle cx ="180" cy ="68" r ="2.15" /><circle cx ="172" cy ="68" r ="2.15" /><circle cx ="164" cy ="60" r ="2.15" /><circle cx ="164" cy ="68" r ="2.15" /><circle cx ="180" cy ="76" r ="2.15" /><circle cx ="172" cy ="76" r ="2.15" /><circle cx ="180" cy ="84" r ="2.15" /><circle cx ="172" cy ="84" r ="2.15" /><circle cx ="164" cy ="76" r ="2.15" /><circle cx ="164" cy ="84" r ="2.15" /><circle cx ="140" cy ="60" r ="2.15" /><circle cx ="140" cy ="68" r ="2.15" /><circle cx ="140" cy ="76" r ="2.15" /><circle cx ="140" cy ="84" r ="2.15" /><path id= "672" d=" M 183.9 88.1 L 159.9 88.1 " />
+<path id= "673" d=" M 144.1 88.1 L 136.1 88.1 " />
+<path id= "674" d=" M 183.9 88.1 L 183.9 103.9 " />
+<path id= "675" d=" M 136.1 88.1 L 136.1 103.9 " />
+<path id= "676" d=" M 183.9 103.9 L 136.1 103.9 " />
+<circle cx ="180" cy ="92" r ="2.4" /><circle cx ="172" cy ="92" r ="2.4" /><circle cx ="164" cy ="92" r ="2.4" /><circle cx ="180" cy ="100" r ="2.4" /><circle cx ="172" cy ="100" r ="2.4" /><circle cx ="164" cy ="100" r ="2.4" /><circle cx ="140" cy ="92" r ="2.4" /><circle cx ="156" cy ="100" r ="2.4" /><circle cx ="148" cy ="100" r ="2.4" /><circle cx ="140" cy ="100" r ="2.4" /><circle cx ="180" cy ="92" r ="2.15" /><circle cx ="172" cy ="92" r ="2.15" /><circle cx ="164" cy ="92" r ="2.15" /><circle cx ="180" cy ="100" r ="2.15" /><circle cx ="172" cy ="100" r ="2.15" /><circle cx ="164" cy ="100" r ="2.15" /><circle cx ="140" cy ="92" r ="2.15" /><circle cx ="156" cy ="100" r ="2.15" /><circle cx ="148" cy ="100" r ="2.15" /><circle cx ="140" cy ="100" r ="2.15" /><path id= "697" d=" M 95.9 72.1 L 87.9 72.1 " />
+<path id= "698" d=" M 95.9 72.1 L 95.9 87.9 " />
+<path id= "699" d=" M 95.9 87.9 L 87.9 87.9 " />
+<circle cx ="92" cy ="76" r ="2.4" /><circle cx ="92" cy ="84" r ="2.4" /><circle cx ="92" cy ="76" r ="2.15" /><circle cx ="92" cy ="84" r ="2.15" /><path id= "704" d=" M 80.1 32.1 L 80.1 40.1 " />
+<path id= "705" d=" M 80.1 32.1 L 95.9 32.1 " />
+<path id= "706" d=" M 87.9 55.9 L 95.9 55.9 " />
+<path id= "707" d=" M 95.9 32.1 L 95.9 55.9 " />
+<path d="M94.2 48 A6.2 6.2 0 0 1 87.9 54.1992" /><path d="M87.9 41.8008 A6.2 6.2 0 0 1 94.2 48" /><path id= "710" d=" M 86.8 33.2 L 86.8 40.1 " />
+<path id= "711" d=" M 86.8 33.2 L 89.2 33.2 " />
+<path id= "712" d=" M 89.2 33.2 L 89.2 41.9172 " />
+<path d="M92.4 48 A4.4 4.4 0 0 1 87.9 52.3989" /><path d="M87.9 43.6011 A4.4 4.4 0 0 1 92.4 48" /><path id= "715" d=" M 40.1 40.1 L 40.1 87.9 " />
+<path id= "716" d=" M 40.1 87.9 L 56.1 87.9 " />
+<path id= "717" d=" M 71.9 87.9 L 87.9 87.9 " />
+<path id= "718" d=" M 40.1 40.1 L 56.1 40.1 " />
+<path id= "719" d=" M 71.9 40.1 L 87.9 40.1 " />
+<path id= "720" d=" M 87.9 40.1 L 87.9 87.9 " />
+<circle cx ="44" cy ="44" r ="2.4" /><circle cx ="52" cy ="44" r ="2.4" /><circle cx ="44" cy ="52" r ="2.4" /><circle cx ="52" cy ="52" r ="2.4" /><circle cx ="44" cy ="60" r ="2.4" /><circle cx ="52" cy ="60" r ="2.4" /><circle cx ="60" cy ="60" r ="2.4" /><circle cx ="76" cy ="44" r ="2.4" /><circle cx ="84" cy ="44" r ="2.4" /><circle cx ="76" cy ="52" r ="2.4" /><circle cx ="84" cy ="52" r ="2.4" /><circle cx ="68" cy ="60" r ="2.4" /><circle cx ="76" cy ="60" r ="2.4" /><circle cx ="84" cy ="60" r ="2.4" /><circle cx ="44" cy ="68" r ="2.4" /><circle cx ="52" cy ="68" r ="2.4" /><circle cx ="60" cy ="68" r ="2.4" /><circle cx ="44" cy ="76" r ="2.4" /><circle cx ="52" cy ="76" r ="2.4" /><circle cx ="44" cy ="84" r ="2.4" /><circle cx ="52" cy ="84" r ="2.4" /><circle cx ="68" cy ="68" r ="2.4" /><circle cx ="76" cy ="68" r ="2.4" /><circle cx ="84" cy ="68" r ="2.4" /><circle cx ="76" cy ="76" r ="2.4" /><circle cx ="84" cy ="76" r ="2.4" /><circle cx ="76" cy ="84" r ="2.4" /><circle cx ="84" cy ="84" r ="2.4" /><circle cx ="44" cy ="44" r ="2.15" /><circle cx ="52" cy ="44" r ="2.15" /><circle cx ="44" cy ="52" r ="2.15" /><circle cx ="52" cy ="52" r ="2.15" /><circle cx ="44" cy ="60" r ="2.15" /><circle cx ="52" cy ="60" r ="2.15" /><circle cx ="60" cy ="60" r ="2.15" /><circle cx ="76" cy ="44" r ="2.15" /><circle cx ="84" cy ="44" r ="2.15" /><circle cx ="76" cy ="52" r ="2.15" /><circle cx ="84" cy ="52" r ="2.15" /><circle cx ="68" cy ="60" r ="2.15" /><circle cx ="76" cy ="60" r ="2.15" /><circle cx ="84" cy ="60" r ="2.15" /><circle cx ="44" cy ="68" r ="2.15" /><circle cx ="52" cy ="68" r ="2.15" /><circle cx ="60" cy ="68" r ="2.15" /><circle cx ="44" cy ="76" r ="2.15" /><circle cx ="52" cy ="76" r ="2.15" /><circle cx ="44" cy ="84" r ="2.15" /><circle cx ="52" cy ="84" r ="2.15" /><circle cx ="68" cy ="68" r ="2.15" /><circle cx ="76" cy ="68" r ="2.15" /><circle cx ="84" cy ="68" r ="2.15" /><circle cx ="76" cy ="76" r ="2.15" /><circle cx ="84" cy ="76" r ="2.15" /><circle cx ="76" cy ="84" r ="2.15" /><circle cx ="84" cy ="84" r ="2.15" /><path id= "777" d=" M 56.1 55.9 L 71.9 55.9 " />
+<path id= "778" d=" M 56.1 40.1 L 71.9 40.1 " />
+<path id= "779" d=" M 56.1 55.9 L 56.1 40.1 " />
+<path id= "780" d=" M 71.9 55.9 L 71.9 40.1 " />
+<path id= "781" d=" M 71.9 72.1 L 56.1 72.1 " />
+<path id= "782" d=" M 71.9 87.9 L 56.1 87.9 " />
+<path id= "783" d=" M 71.9 72.1 L 71.9 87.9 " />
+<path id= "784" d=" M 56.1 72.1 L 56.1 87.9 " />
+<path id= "785" d=" M 144.1 32.1 L 144.1 95.9 " />
+<path id= "786" d=" M 144.1 32.1 L 159.9 32.1 " />
+<path id= "787" d=" M 144.1 95.9 L 159.9 95.9 " />
+<path id= "788" d=" M 159.9 32.1 L 159.9 95.9 " />
+<path id= "789" d=" M 104.1 40.1 L 104.1 87.9 " />
+<path id= "790" d=" M 104.1 40.1 L 119.9 40.1 " />
+<path id= "791" d=" M 104.1 87.9 L 119.9 87.9 " />
+<path id= "792" d=" M 119.9 40.1 L 119.9 87.9 " />
+<path id= "793" d=" M 106.2 42.1 L 111.3 42.1 " />
+<path id= "794" d=" M 111.3 42.1 L 111.3 45.2 " />
+<path id= "795" d=" M 106.2 45.2 L 111.3 45.2 " />
+<path id= "796" d=" M 106.2 42.1 L 106.2 45.2 " />
+<path id= "797" d=" M 106.2 46.5 L 111.3 46.5 " />
+<path id= "798" d=" M 111.3 46.5 L 111.3 49.6 " />
+<path id= "799" d=" M 106.2 49.6 L 111.3 49.6 " />
+<path id= "800" d=" M 106.2 46.5 L 106.2 49.6 " />
+<path id= "801" d=" M 106.2 50.9 L 111.3 50.9 " />
+<path id= "802" d=" M 111.3 50.9 L 111.3 54 " />
+<path id= "803" d=" M 106.2 54 L 111.3 54 " />
+<path id= "804" d=" M 106.2 50.9 L 106.2 54 " />
+<path id= "805" d=" M 106.2 55.3 L 111.3 55.3 " />
+<path id= "806" d=" M 111.3 55.3 L 111.3 58.4 " />
+<path id= "807" d=" M 106.2 58.4 L 111.3 58.4 " />
+<path id= "808" d=" M 106.2 55.3 L 106.2 58.4 " />
+<path id= "809" d=" M 106.2 59.7 L 111.3 59.7 " />
+<path id= "810" d=" M 111.3 59.7 L 111.3 62.8 " />
+<path id= "811" d=" M 106.2 62.8 L 111.3 62.8 " />
+<path id= "812" d=" M 106.2 59.7 L 106.2 62.8 " />
+<path id= "813" d=" M 112.7 42.1 L 117.8 42.1 " />
+<path id= "814" d=" M 117.8 42.1 L 117.8 45.2 " />
+<path id= "815" d=" M 112.7 45.2 L 117.8 45.2 " />
+<path id= "816" d=" M 112.7 42.1 L 112.7 45.2 " />
+<path id= "817" d=" M 112.7 46.5 L 117.8 46.5 " />
+<path id= "818" d=" M 117.8 46.5 L 117.8 49.6 " />
+<path id= "819" d=" M 112.7 49.6 L 117.8 49.6 " />
+<path id= "820" d=" M 112.7 46.5 L 112.7 49.6 " />
+<path id= "821" d=" M 112.7 50.9 L 117.8 50.9 " />
+<path id= "822" d=" M 117.8 50.9 L 117.8 54 " />
+<path id= "823" d=" M 112.7 54 L 117.8 54 " />
+<path id= "824" d=" M 112.7 50.9 L 112.7 54 " />
+<path id= "825" d=" M 112.7 55.3 L 117.8 55.3 " />
+<path id= "826" d=" M 117.8 55.3 L 117.8 58.4 " />
+<path id= "827" d=" M 112.7 58.4 L 117.8 58.4 " />
+<path id= "828" d=" M 112.7 55.3 L 112.7 58.4 " />
+<path id= "829" d=" M 112.7 59.7 L 117.8 59.7 " />
+<path id= "830" d=" M 117.8 59.7 L 117.8 62.8 " />
+<path id= "831" d=" M 112.7 62.8 L 117.8 62.8 " />
+<path id= "832" d=" M 112.7 59.7 L 112.7 62.8 " />
+<path id= "833" d=" M 106.2 64.1 L 111.3 64.1 " />
+<path id= "834" d=" M 111.3 64.1 L 111.3 67.2 " />
+<path id= "835" d=" M 106.2 67.2 L 111.3 67.2 " />
+<path id= "836" d=" M 106.2 64.1 L 106.2 67.2 " />
+<path id= "837" d=" M 106.2 68.5 L 111.3 68.5 " />
+<path id= "838" d=" M 111.3 68.5 L 111.3 71.6 " />
+<path id= "839" d=" M 106.2 71.6 L 111.3 71.6 " />
+<path id= "840" d=" M 106.2 68.5 L 106.2 71.6 " />
+<path id= "841" d=" M 106.2 72.9 L 111.3 72.9 " />
+<path id= "842" d=" M 111.3 72.9 L 111.3 76 " />
+<path id= "843" d=" M 106.2 76 L 111.3 76 " />
+<path id= "844" d=" M 106.2 72.9 L 106.2 76 " />
+<path id= "845" d=" M 106.2 77.3 L 111.3 77.3 " />
+<path id= "846" d=" M 111.3 77.3 L 111.3 80.4 " />
+<path id= "847" d=" M 106.2 80.4 L 111.3 80.4 " />
+<path id= "848" d=" M 106.2 77.3 L 106.2 80.4 " />
+<path id= "849" d=" M 106.2 81.7 L 111.3 81.7 " />
+<path id= "850" d=" M 111.3 81.7 L 111.3 84.8 " />
+<path id= "851" d=" M 106.2 84.8 L 111.3 84.8 " />
+<path id= "852" d=" M 106.2 81.7 L 106.2 84.8 " />
+<path id= "853" d=" M 112.7 64.1 L 117.8 64.1 " />
+<path id= "854" d=" M 117.8 64.1 L 117.8 67.2 " />
+<path id= "855" d=" M 112.7 67.2 L 117.8 67.2 " />
+<path id= "856" d=" M 112.7 64.1 L 112.7 67.2 " />
+<path id= "857" d=" M 112.7 68.5 L 117.8 68.5 " />
+<path id= "858" d=" M 117.8 68.5 L 117.8 71.6 " />
+<path id= "859" d=" M 112.7 71.6 L 117.8 71.6 " />
+<path id= "860" d=" M 112.7 68.5 L 112.7 71.6 " />
+<path id= "861" d=" M 112.7 72.9 L 117.8 72.9 " />
+<path id= "862" d=" M 117.8 72.9 L 117.8 76 " />
+<path id= "863" d=" M 112.7 76 L 117.8 76 " />
+<path id= "864" d=" M 112.7 72.9 L 112.7 76 " />
+<path id= "865" d=" M 112.7 77.3 L 117.8 77.3 " />
+<path id= "866" d=" M 117.8 77.3 L 117.8 80.4 " />
+<path id= "867" d=" M 112.7 80.4 L 117.8 80.4 " />
+<path id= "868" d=" M 112.7 77.3 L 112.7 80.4 " />
+<path id= "869" d=" M 112.7 81.7 L 117.8 81.7 " />
+<path id= "870" d=" M 117.8 81.7 L 117.8 84.8 " />
+<path id= "871" d=" M 112.7 84.8 L 117.8 84.8 " />
+<path id= "872" d=" M 112.7 81.7 L 112.7 84.8 " />
+</g>
+
+<g stroke="#177765" fill="none" stroke-width=".2">
+<path d="M0.1,1.9V7.9 M191.9,1.9V7.9 M0.1,5.9H191.9"/>
+<path d="M193.9,-127.90000000000002H199.9 M193.9,-0.1H199.9 M197.9,-127.90000000000002V-0.1"/>
+</g><g font-family="sans-serif" font-size="3.6" fill="#174a40">
+<text x="96.0" y="11.9" text-anchor="middle">191.8 mm</text>
+<text x="200.9" y="-64.00000000000001" transform="rotate(-90 200.9 -64.00000000000001)" text-anchor="middle">127.8 mm</text>
+</g></svg>

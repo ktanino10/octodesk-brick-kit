@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "native_blend_reopened": true,
+  "instances": 137,
+  "stl_hashes_triangles_local_bounds_materials_match": true,
+  "mm_to_m_verified": 0.001,
+  "completed_global_bounds_mm": [
+    [
+      0.10000000149011612,
+      0.09999720752239227,
+      0.0
+    ],
+    [
+      191.90000915527344,
+      127.9000015258789,
+      127.99999237060547
+    ]
+  ],
+  "empty_frame_verified": 1,
+  "step_end_frames_verified": 37,
+  "camera_turntable_frames": 48,
+  "physical_simulation": false,
+  "render_output_relative": true
+}

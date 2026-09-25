@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "engine": "Chromium print-to-PDF",
+  "logical_pages": 44,
+  "source_images": 8,
+  "images_loaded": true,
+  "overflow_pages": [],
+  "fonts_ready": true,
+  "errors": [],
+  "failed": []
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "headless_native_reopened": true,
+  "assembly_objects": 137,
+  "separate_library_types": 23,
+  "no_extra_library_solids_in_assembly_document": true,
+  "all_bounds_volumes_types_steps_color_attributes_match": true,
+  "native_sha256": "7b12560c6e6a5df547b23ef6f240113e61b73985551165e64da27ea25cc0d884",
+  "library_sha256": "9e654c63ab7c38fc380337eb1ee6cf88d20fa69bf9956422db646fd2357f424a",
+  "gui_viewport_colors": "NOT_VERIFIED",
+  "gui_limitation": "An isolated offscreen GUI startup did not return. No existing application was touched. Shapes, names, placements, step groups and PartColor attributes are saved and verified via native reopen; GUI display colors may use FreeCAD defaults."
+}

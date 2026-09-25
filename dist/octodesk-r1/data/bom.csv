@@ -1,0 +1,21 @@
+﻿part,color,quantity,stl,print_sources
+B-1x2,black,2,stl/B-1x2.stl,plates/O-black-01-NOT_SLICED.3mf
+B-2x2,beige,3,stl/B-2x2.stl,plates/O-beige-01-NOT_SLICED.3mf
+B-2x2,black,1,stl/B-2x2.stl,plates/O-black-01-NOT_SLICED.3mf
+B-2x2,white,30,stl/B-2x2.stl,plates/O-white-02-NOT_SLICED.3mf; plates/O-white-03-NOT_SLICED.3mf
+B-2x4,beige,3,stl/B-2x4.stl,plates/O-beige-01-NOT_SLICED.3mf
+B-2x4,black,14,stl/B-2x4.stl,plates/O-black-01-NOT_SLICED.3mf
+B-2x4,white,43,stl/B-2x4.stl,plates/O-white-01-NOT_SLICED.3mf; plates/O-white-02-NOT_SLICED.3mf
+EAR-2x2,black,2,stl/EAR-2x2.stl,plates/O-black-01-NOT_SLICED.3mf
+KEY-2x6,white,1,stl/KEY-2x6.stl,plates/O-white-01-NOT_SLICED.3mf
+MUG-2x3,yellow,1,stl/MUG-2x3.stl,plates/O-yellow-01-NOT_SLICED.3mf
+P-2x4,black,2,stl/P-2x4.stl,plates/O-black-01-NOT_SLICED.3mf
+P-2x6,white,2,stl/P-2x6.stl,plates/O-white-01-NOT_SLICED.3mf
+P-4x10,white,3,stl/P-4x10.stl,plates/O-white-01-NOT_SLICED.3mf
+P-4x4,green,4,stl/P-4x4.stl,plates/O-green-02-NOT_SLICED.3mf
+P-4x6,white,4,stl/P-4x6.stl,plates/O-white-01-NOT_SLICED.3mf
+P-4x8,green,6,stl/P-4x8.stl,plates/O-green-01-NOT_SLICED.3mf; plates/O-green-02-NOT_SLICED.3mf
+P-4x8,white,4,stl/P-4x8.stl,plates/O-white-01-NOT_SLICED.3mf
+P-6x6,black,2,stl/P-6x6.stl,plates/O-black-01-NOT_SLICED.3mf
+P-8x8,green,8,stl/P-8x8.stl,plates/O-green-01-NOT_SLICED.3mf
+T-2x8,white,2,stl/T-2x8.stl,plates/O-white-01-NOT_SLICED.3mf

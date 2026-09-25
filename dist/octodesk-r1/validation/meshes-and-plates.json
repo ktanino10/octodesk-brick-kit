@@ -1,0 +1,376 @@
+{
+  "status": "PASS",
+  "types": [
+    {
+      "part": "P-8x8",
+      "triangles": 67668,
+      "watertight": true,
+      "connected_shells": 1,
+      "all_edges_two_faces": true,
+      "outward_winding": true,
+      "bounds_match_brep": true,
+      "volume_error_fraction": 0.0004072876555952787,
+      "minimum_triangle_area_mm2": 0.0004951659866492264
+    },
+    {
+      "part": "P-4x4",
+      "triangles": 14580,
+      "watertight": true,
+      "connected_shells": 1,
+      "all_edges_two_faces": true,
+      "outward_winding": true,
+      "bounds_match_brep": true,
+      "volume_error_fraction": 0.00035425147898748843,
+      "minimum_triangle_area_mm2": 0.0004953428160661133
+    },
+    {
+      "part": "P-4x8",
+      "triangles": 31316,
+      "watertight": true,
+      "connected_shells": 1,
+      "all_edges_two_faces": true,
+      "outward_winding": true,
+      "bounds_match_brep": true,
+      "volume_error_fraction": 0.00037903177020059964,
+      "minimum_triangle_area_mm2": 0.0004952160588800325
+    },
+    {
+      "part": "B-2x2",
+      "triangles": 2748,
+      "watertight": true,
+      "connected_shells": 1,
+      "all_edges_two_faces": true,
+      "outward_winding": true,
+      "bounds_match_brep": true,
+      "volume_error_fraction": 0.00018714196593594412,
+      "minimum_triangle_area_mm2": 0.0004953874372404243
+    },
+    {
+      "part": "B-2x4",
+      "triangles": 6212,
+      "watertight": true,
+      "connected_shells": 1,
+      "all_edges_two_faces": true,
+      "outward_winding": true,
+      "bounds_match_brep": true,
+      "volume_error_fraction": 0.00024118367904746307,
+      "minimum_triangle_area_mm2": 0.0004953874372404243
+    },
+    {
+      "part": "T-2x8",
+      "triangles": 5556,
+      "watertight": true,
+      "connected_shells": 1,
+      "all_edges_two_faces": true,
+      "outward_winding": true,
+      "bounds_match_brep": true,
+      "volume_error_fraction": 0.00013781136965440588,
+      "minimum_triangle_area_mm2": 0.0004952160588800325
+    },
+    {
+      "part": "B-1x2",
+      "triangles": 1460,
+      "watertight": true,
+      "connected_shells": 1,
+      "all_edges_two_faces": true,
+      "outward_winding": true,
+      "bounds_match_brep": true,
+      "volume_error_fraction": 0.00014089398319350188,
+      "minimum_triangle_area_mm2": 0.000464993141576997
+    },
+    {
+      "part": "P-4x10",
+      "triangles": 39684,
+      "watertight": true,
+      "connected_shells": 1,
+      "all_edges_two_faces": true,
+      "outward_winding": true,
+      "bounds_match_brep": true,
+      "volume_error_fraction": 0.00038407582112742755,
+      "minimum_triangle_area_mm2": 0.0004950086877215654
+    },
+    {
+      "part": "P-4x6",
+      "triangles": 22948,
+      "watertight": true,
+      "connected_shells": 1,
+      "all_edges_two_faces": true,
+      "outward_winding": true,
+      "bounds_match_brep": true,
+      "volume_error_fraction": 0.0003707118546781851,
+      "minimum_triangle_area_mm2": 0.0004952160588800325
+    },
+    {
+      "part": "P-2x6",
+      "triangles": 9676,
+      "watertight": true,
+      "connected_shells": 1,
+      "all_edges_two_faces": true,
+      "outward_winding": true,
+      "bounds_match_brep": true,
+      "volume_error_fraction": 0.00031677908568117363,
+      "minimum_triangle_area_mm2": 0.0004952160588800325
+    },
+    {
+      "part": "P-2x4",
+      "triangles": 6212,
+      "watertight": true,
+      "connected_shells": 1,
+      "all_edges_two_faces": true,
+      "outward_winding": true,
+      "bounds_match_brep": true,
+      "volume_error_fraction": 0.0003051089882867286,
+      "minimum_triangle_area_mm2": 0.0004953874372404243
+    },
+    {
+      "part": "MUG-2x3",
+      "triangles": 2302,
+      "watertight": true,
+      "connected_shells": 1,
+      "all_edges_two_faces": true,
+      "outward_winding": true,
+      "bounds_match_brep": true,
+      "volume_error_fraction": 0.00039236759238492347,
+      "minimum_triangle_area_mm2": 0.0004953874372404243
+    },
+    {
+      "part": "P-6x6",
+      "triangles": 36220,
+      "watertight": true,
+      "connected_shells": 1,
+      "all_edges_two_faces": true,
+      "outward_winding": true,
+      "bounds_match_brep": true,
+      "volume_error_fraction": 0.0003887247785829828,
+      "minimum_triangle_area_mm2": 0.0004951659866492264
+    },
+    {
+      "part": "EAR-2x2",
+      "triangles": 852,
+      "watertight": true,
+      "connected_shells": 1,
+      "all_edges_two_faces": true,
+      "outward_winding": true,
+      "bounds_match_brep": true,
+      "volume_error_fraction": 2.0884133948406713e-05,
+      "minimum_triangle_area_mm2": 0.0004953874372404243
+    },
+    {
+      "part": "KEY-2x6",
+      "triangles": 4308,
+      "watertight": true,
+      "connected_shells": 1,
+      "all_edges_two_faces": true,
+      "outward_winding": true,
+      "bounds_match_brep": true,
+      "volume_error_fraction": 0.0001142945808892959,
+      "minimum_triangle_area_mm2": 0.0004952160588800325
+    },
+    {
+      "part": "FIT-M-D470",
+      "triangles": 2748,
+      "watertight": true,
+      "connected_shells": 1,
+      "all_edges_two_faces": true,
+      "outward_winding": true,
+      "bounds_match_brep": true,
+      "volume_error_fraction": 0.00018407865744440866,
+      "minimum_triangle_area_mm2": 0.0004953874372404243
+    },
+    {
+      "part": "FIT-M-D480",
+      "triangles": 2748,
+      "watertight": true,
+      "connected_shells": 1,
+      "all_edges_two_faces": true,
+      "outward_winding": true,
+      "bounds_match_brep": true,
+      "volume_error_fraction": 0.00018714196593594412,
+      "minimum_triangle_area_mm2": 0.0004953874372404243
+    },
+    {
+      "part": "FIT-M-D490",
+      "triangles": 2748,
+      "watertight": true,
+      "connected_shells": 1,
+      "all_edges_two_faces": true,
+      "outward_winding": true,
+      "bounds_match_brep": true,
+      "volume_error_fraction": 0.00019024614983031984,
+      "minimum_triangle_area_mm2": 0.0004953874372404243
+    },
+    {
+      "part": "FIT-F-CN04",
+      "triangles": 868,
+      "watertight": true,
+      "connected_shells": 1,
+      "all_edges_two_faces": true,
+      "outward_winding": true,
+      "bounds_match_brep": true,
+      "volume_error_fraction": 9.540904794791416e-05,
+      "minimum_triangle_area_mm2": 0.0004953874372404243
+    },
+    {
+      "part": "FIT-F-C000",
+      "triangles": 868,
+      "watertight": true,
+      "connected_shells": 1,
+      "all_edges_two_faces": true,
+      "outward_winding": true,
+      "bounds_match_brep": true,
+      "volume_error_fraction": 9.184540171580657e-05,
+      "minimum_triangle_area_mm2": 0.0004953874372404243
+    },
+    {
+      "part": "FIT-F-CP04",
+      "triangles": 852,
+      "watertight": true,
+      "connected_shells": 1,
+      "all_edges_two_faces": true,
+      "outward_winding": true,
+      "bounds_match_brep": true,
+      "volume_error_fraction": 0.00010685154696810084,
+      "minimum_triangle_area_mm2": 0.0004953874372404243
+    },
+    {
+      "part": "FIT-F-CP08",
+      "triangles": 852,
+      "watertight": true,
+      "connected_shells": 1,
+      "all_edges_two_faces": true,
+      "outward_winding": true,
+      "bounds_match_brep": true,
+      "volume_error_fraction": 0.00010283667682042807,
+      "minimum_triangle_area_mm2": 0.0004953874372404243
+    },
+    {
+      "part": "FIT-F-CP12",
+      "triangles": 852,
+      "watertight": true,
+      "connected_shells": 1,
+      "all_edges_two_faces": true,
+      "outward_winding": true,
+      "bounds_match_brep": true,
+      "volume_error_fraction": 9.893604924360311e-05,
+      "minimum_triangle_area_mm2": 0.0004953874372404243
+    }
+  ],
+  "plates": [
+    {
+      "file": "plates/O-green-01-NOT_SLICED.3mf",
+      "slots": 10,
+      "independent_build_items": true,
+      "mesh_matches_stl": true,
+      "independent_trimesh_scene_import_count_and_bounds": true,
+      "unit_mm": true,
+      "minimum_bbox_gap_mm": 9.999999999999972,
+      "bed": "256x256 with 10 mm nominal edge margin; no toolpath qualification"
+    },
+    {
+      "file": "plates/O-green-02-NOT_SLICED.3mf",
+      "slots": 8,
+      "independent_build_items": true,
+      "mesh_matches_stl": true,
+      "independent_trimesh_scene_import_count_and_bounds": true,
+      "unit_mm": true,
+      "minimum_bbox_gap_mm": 9.999999999999986,
+      "bed": "256x256 with 10 mm nominal edge margin; no toolpath qualification"
+    },
+    {
+      "file": "plates/O-white-01-NOT_SLICED.3mf",
+      "slots": 19,
+      "independent_build_items": true,
+      "mesh_matches_stl": true,
+      "independent_trimesh_scene_import_count_and_bounds": true,
+      "unit_mm": true,
+      "minimum_bbox_gap_mm": 9.999999999999986,
+      "bed": "256x256 with 10 mm nominal edge margin; no toolpath qualification"
+    },
+    {
+      "file": "plates/O-white-02-NOT_SLICED.3mf",
+      "slots": 54,
+      "independent_build_items": true,
+      "mesh_matches_stl": true,
+      "independent_trimesh_scene_import_count_and_bounds": true,
+      "unit_mm": true,
+      "minimum_bbox_gap_mm": 9.999999999999986,
+      "bed": "256x256 with 10 mm nominal edge margin; no toolpath qualification"
+    },
+    {
+      "file": "plates/O-white-03-NOT_SLICED.3mf",
+      "slots": 16,
+      "independent_build_items": true,
+      "mesh_matches_stl": true,
+      "independent_trimesh_scene_import_count_and_bounds": true,
+      "unit_mm": true,
+      "minimum_bbox_gap_mm": 9.999999999999996,
+      "bed": "256x256 with 10 mm nominal edge margin; no toolpath qualification"
+    },
+    {
+      "file": "plates/O-black-01-NOT_SLICED.3mf",
+      "slots": 23,
+      "independent_build_items": true,
+      "mesh_matches_stl": true,
+      "independent_trimesh_scene_import_count_and_bounds": true,
+      "unit_mm": true,
+      "minimum_bbox_gap_mm": 9.999999999999996,
+      "bed": "256x256 with 10 mm nominal edge margin; no toolpath qualification"
+    },
+    {
+      "file": "plates/O-yellow-01-NOT_SLICED.3mf",
+      "slots": 1,
+      "independent_build_items": true,
+      "mesh_matches_stl": true,
+      "independent_trimesh_scene_import_count_and_bounds": true,
+      "unit_mm": true,
+      "minimum_bbox_gap_mm": 256,
+      "bed": "256x256 with 10 mm nominal edge margin; no toolpath qualification"
+    },
+    {
+      "file": "plates/O-beige-01-NOT_SLICED.3mf",
+      "slots": 6,
+      "independent_build_items": true,
+      "mesh_matches_stl": true,
+      "independent_trimesh_scene_import_count_and_bounds": true,
+      "unit_mm": true,
+      "minimum_bbox_gap_mm": 9.999999999999996,
+      "bed": "256x256 with 10 mm nominal edge margin; no toolpath qualification"
+    },
+    {
+      "file": "coupons/01-loose-pair-NOT_SLICED.3mf",
+      "slots": 2,
+      "independent_build_items": true,
+      "mesh_matches_stl": true,
+      "independent_trimesh_scene_import_count_and_bounds": true,
+      "unit_mm": true,
+      "minimum_bbox_gap_mm": 9.999999999999996,
+      "bed": "256x256 with 10 mm nominal edge margin; no toolpath qualification"
+    },
+    {
+      "file": "coupons/02-representative-NOT_SLICED.3mf",
+      "slots": 4,
+      "independent_build_items": true,
+      "mesh_matches_stl": true,
+      "independent_trimesh_scene_import_count_and_bounds": true,
+      "unit_mm": true,
+      "minimum_bbox_gap_mm": 9.999999999999996,
+      "bed": "256x256 with 10 mm nominal edge margin; no toolpath qualification"
+    },
+    {
+      "file": "coupons/03-base-joint-NOT_SLICED.3mf",
+      "slots": 3,
+      "independent_build_items": true,
+      "mesh_matches_stl": true,
+      "independent_trimesh_scene_import_count_and_bounds": true,
+      "unit_mm": true,
+      "minimum_bbox_gap_mm": 10.0,
+      "bed": "256x256 with 10 mm nominal edge margin; no toolpath qualification"
+    }
+  ],
+  "assembly_bom_equals_3mf_equals_instances": 137,
+  "trial_slots_excluded_from_assembly": 9,
+  "bidirectional_mapping_complete": true,
+  "commercial_compatibility_tested": false,
+  "sliced": false,
+  "profile_exclusion_zones_checked": false
+}

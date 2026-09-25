@@ -1,0 +1,11 @@
+{
+  "revision": "1.0.0",
+  "geometry_changes": false,
+  "stills_engine": "EEVEE",
+  "color_management": "Standard; 4 mm contact shading",
+  "key_watts": 0.99,
+  "face_fill_watts": 0.66,
+  "rim_watts": 0.825,
+  "note": "Lighting-only correction; all mesh shapes, palette and placements unchanged.",
+  "all_stills_refreshed": true
+}

@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "full_decode": true,
+  "codec": "h264",
+  "pixel_format": "yuv420p",
+  "frames": 493,
+  "fps": 12,
+  "duration_seconds": 41.083333,
+  "resolution": [
+    800,
+    760
+  ],
+  "faststart": true,
+  "captioned_steps": 37,
+  "decoded_representative_frames": [
+    0,
+    155,
+    300,
+    444,
+    492
+  ],
+  "rendering": "Blender Workbench mesh animation; Japanese captions composited with Pillow",
+  "caption_font": "ヒラギノ角ゴシック W3.ttc",
+  "font_file_redistributed": false,
+  "browser_fallback": {
+    "file": "media/assembly.webm",
+    "codec": "VP9",
+    "full_decode": true,
+    "reason": "Unbranded Chromium may not include H.264."
+  }
+}

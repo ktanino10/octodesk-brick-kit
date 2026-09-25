@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "native_reopened": true,
+  "step_reimported": true,
+  "valid_single_solid_types": 23,
+  "native_instances": 137,
+  "step_solids": 137,
+  "step_per_solid_bounds_volume_match": true,
+  "pair_count": 9316,
+  "bbox_candidate_pairs": 220,
+  "intersections": [],
+  "interference_tolerance_mm3": 1e-06,
+  "insertion_sample_count": 1540,
+  "monotone_engagement_pairs": 220,
+  "vertical_sweep_argument": "For every XY-overlapping earlier part, max Z <= landing Z + 1.8. Only aligned stud tips enter; open receivers have 2.2 mm minimum roof clearance and wider lead-ins. Non-stud solids are below landing Z. Intermediate engagement samples also checked.",
+  "connected_instances": 137,
+  "connections": 220,
+  "minimum_engaged_studs": 2,
+  "hand_access": "Assembly order keeps head off until cup and neck are fitted. Keyboard is last with 16 mm clearance from head and 24 mm from monitor. Not a hand/force simulation.",
+  "physical_qualification": false,
+  "elapsed_seconds": 200.4,
+  "assembly_bounds_mm": [
+    [
+      0.1,
+      0.1,
+      0.0
+    ],
+    [
+      191.9,
+      127.90000000000002,
+      128.0
+    ]
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "edition": "r1-public-1",
+  "geometry_revision": "1.0.0",
+  "authorized_on": "2026-09-25",
+  "repository": "https://github.com/ktanino10/octodesk-brick-kit",
+  "pages": "https://ktanino10.github.io/octodesk-brick-kit/",
+  "release_tag": "v1.0.0",
+  "release": "https://github.com/ktanino10/octodesk-brick-kit/releases/tag/v1.0.0",
+  "archive_name": "octodesk-r1-offline.zip",
+  "archive_url": "https://github.com/ktanino10/octodesk-brick-kit/releases/download/v1.0.0/octodesk-r1-offline.zip",
+  "source_visibility": "public",
+  "scope": [
+    "design-source",
+    "print-geometry",
+    "native-cad",
+    "renders",
+    "animation",
+    "japanese-guide",
+    "offline-archive"
+  ],
+  "excluded": [
+    "reference-photograph",
+    "reference-artwork",
+    "personal-information",
+    "credentials",
+    "local-profiles",
+    "session-logs",
+    "caches"
+  ],
+  "local_predecessor_archive_sha256": "429252ee85a39278b435868ccc743250aa74e5f9dfb8981349a9fad4fb685933",
+  "printer_operations_authorized": false
+}

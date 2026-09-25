@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "pages": 44,
+  "all_137_instance_ids_in_extracted_text": true,
+  "all_37_numbered_steps_in_extracted_text": true,
+  "critical_nozzle_not_sliced_and_gui_limitations_in_text": true,
+  "pdfinfo_readable": true,
+  "fonts": "Chromium embedded/subset Japanese glyphs; font files not redistributed"
+}

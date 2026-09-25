@@ -1,0 +1,935 @@
+{
+  "revision": "1.0.0",
+  "freecad_version": "1.1.3",
+  "generator_sha256": "8a36e19922fc95ac7899b6943eac432287ac2874dcf047c240bb1836b528fe60",
+  "parts": {
+    "P-8x8": {
+      "id": "P-8x8",
+      "kind": "brick",
+      "nx": 8,
+      "ny": 8,
+      "body_height": 3.2,
+      "studs": true,
+      "male_diameter_correction": 0.0,
+      "female_radial_clearance": 0.04,
+      "roof_mm": 1.0,
+      "open_bottom": true,
+      "print_orientation": "open_bottom_down",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "bounds_mm": [
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          63.9,
+          63.9,
+          5.0
+        ]
+      ],
+      "volume_mm3": 10130.617571834335,
+      "stl": "stl/P-8x8.stl",
+      "sha256": "28bae1bfcb359f7891e2657b1fc202bf3e3a6138c906a7f0b0f13d2c396725f4",
+      "brep_valid": true,
+      "solid_count": 1,
+      "triangles": 67668,
+      "minimum_outer_wall_mm": 1.46,
+      "minimum_entry_wall_mm": 1.26,
+      "roof_bridge_span_mm": 6.8
+    },
+    "P-4x4": {
+      "id": "P-4x4",
+      "kind": "brick",
+      "nx": 4,
+      "ny": 4,
+      "body_height": 3.2,
+      "studs": true,
+      "male_diameter_correction": 0.0,
+      "female_radial_clearance": 0.04,
+      "roof_mm": 1.0,
+      "open_bottom": true,
+      "print_orientation": "open_bottom_down",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "bounds_mm": [
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          31.900000000000002,
+          31.900000000000002,
+          5.0
+        ]
+      ],
+      "volume_mm3": 2545.445049025777,
+      "stl": "stl/P-4x4.stl",
+      "sha256": "95c27150e78c4452f8dd7ebc09cdb2471109727bddb603cf9e53336227526e9e",
+      "brep_valid": true,
+      "solid_count": 1,
+      "triangles": 14580,
+      "minimum_outer_wall_mm": 1.46,
+      "minimum_entry_wall_mm": 1.26,
+      "roof_bridge_span_mm": 6.8
+    },
+    "P-4x8": {
+      "id": "P-4x8",
+      "kind": "brick",
+      "nx": 4,
+      "ny": 8,
+      "body_height": 3.2,
+      "studs": true,
+      "male_diameter_correction": 0.0,
+      "female_radial_clearance": 0.04,
+      "roof_mm": 1.0,
+      "open_bottom": true,
+      "print_orientation": "open_bottom_down",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "bounds_mm": [
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          31.900000000000002,
+          63.9,
+          5.0
+        ]
+      ],
+      "volume_mm3": 5074.318464792845,
+      "stl": "stl/P-4x8.stl",
+      "sha256": "41c237d048e3931ce5ddd7ef0ca9e3bc30086f1ebba9de02e3625c4d4c6525bc",
+      "brep_valid": true,
+      "solid_count": 1,
+      "triangles": 31316,
+      "minimum_outer_wall_mm": 1.46,
+      "minimum_entry_wall_mm": 1.26,
+      "roof_bridge_span_mm": 6.8
+    },
+    "B-2x2": {
+      "id": "B-2x2",
+      "kind": "brick",
+      "nx": 2,
+      "ny": 2,
+      "body_height": 9.6,
+      "studs": true,
+      "male_diameter_correction": 0.0,
+      "female_radial_clearance": 0.04,
+      "roof_mm": 1.6,
+      "open_bottom": true,
+      "print_orientation": "open_bottom_down",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "bounds_mm": [
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          15.9,
+          15.9,
+          11.4
+        ]
+      ],
+      "volume_mm3": 1516.1006741006508,
+      "stl": "stl/B-2x2.stl",
+      "sha256": "b358332bde8f6a8f6415e169c49f1ed86f224e4bc63f3e7cf49fff82fef115d5",
+      "brep_valid": true,
+      "solid_count": 1,
+      "triangles": 2748,
+      "minimum_outer_wall_mm": 1.46,
+      "minimum_entry_wall_mm": 1.26,
+      "roof_bridge_span_mm": 6.8
+    },
+    "B-2x4": {
+      "id": "B-2x4",
+      "kind": "brick",
+      "nx": 2,
+      "ny": 4,
+      "body_height": 9.6,
+      "studs": true,
+      "male_diameter_correction": 0.0,
+      "female_radial_clearance": 0.04,
+      "roof_mm": 1.6,
+      "open_bottom": true,
+      "print_orientation": "open_bottom_down",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "bounds_mm": [
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          15.9,
+          31.900000000000002,
+          11.4
+        ]
+      ],
+      "volume_mm3": 2967.73563792896,
+      "stl": "stl/B-2x4.stl",
+      "sha256": "19d9f7506594fc493fa36bbca0e4a84841175a0c12bae3f4787cd0ac87d72735",
+      "brep_valid": true,
+      "solid_count": 1,
+      "triangles": 6212,
+      "minimum_outer_wall_mm": 1.46,
+      "minimum_entry_wall_mm": 1.26,
+      "roof_bridge_span_mm": 6.8
+    },
+    "T-2x8": {
+      "id": "T-2x8",
+      "kind": "tile",
+      "nx": 2,
+      "ny": 8,
+      "body_height": 3.2,
+      "studs": false,
+      "male_diameter_correction": 0.0,
+      "female_radial_clearance": 0.04,
+      "roof_mm": 1.0,
+      "open_bottom": true,
+      "print_orientation": "open_bottom_down",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "bounds_mm": [
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          15.9,
+          63.9,
+          3.2
+        ]
+      ],
+      "volume_mm3": 2032.294408329706,
+      "stl": "stl/T-2x8.stl",
+      "sha256": "9b455c78f1ce18a9daa1921366f49e68425b0882e9c9056b7bbeae1f8fb97375",
+      "brep_valid": true,
+      "solid_count": 1,
+      "triangles": 5556,
+      "minimum_outer_wall_mm": 1.46,
+      "minimum_entry_wall_mm": 1.26,
+      "roof_bridge_span_mm": 6.8
+    },
+    "B-1x2": {
+      "id": "B-1x2",
+      "kind": "brick",
+      "nx": 1,
+      "ny": 2,
+      "body_height": 9.6,
+      "studs": true,
+      "male_diameter_correction": 0.0,
+      "female_radial_clearance": 0.04,
+      "roof_mm": 1.6,
+      "open_bottom": true,
+      "print_orientation": "open_bottom_down",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "bounds_mm": [
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          7.8999999999999995,
+          15.9,
+          11.4
+        ]
+      ],
+      "volume_mm3": 822.0426269538625,
+      "stl": "stl/B-1x2.stl",
+      "sha256": "14cb4d74ac37a349bd79456d3c35ee8c19f4665e811baecfe4df4d897c77fc26",
+      "brep_valid": true,
+      "solid_count": 1,
+      "triangles": 1460,
+      "minimum_outer_wall_mm": 1.46,
+      "minimum_entry_wall_mm": 1.26,
+      "roof_bridge_span_mm": 6.8
+    },
+    "P-4x10": {
+      "id": "P-4x10",
+      "kind": "brick",
+      "nx": 4,
+      "ny": 10,
+      "body_height": 3.2,
+      "studs": true,
+      "male_diameter_correction": 0.0,
+      "female_radial_clearance": 0.04,
+      "roof_mm": 1.0,
+      "open_bottom": true,
+      "print_orientation": "open_bottom_down",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "bounds_mm": [
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          31.900000000000002,
+          79.89999999999999,
+          5.0
+        ]
+      ],
+      "volume_mm3": 6338.755172256635,
+      "stl": "stl/P-4x10.stl",
+      "sha256": "a9fb78af406d4e9a1503782f4c012f6f5d2a018ecc9b36902df8b1fe934babe6",
+      "brep_valid": true,
+      "solid_count": 1,
+      "triangles": 39684,
+      "minimum_outer_wall_mm": 1.46,
+      "minimum_entry_wall_mm": 1.26,
+      "roof_bridge_span_mm": 6.8
+    },
+    "P-4x6": {
+      "id": "P-4x6",
+      "kind": "brick",
+      "nx": 4,
+      "ny": 6,
+      "body_height": 3.2,
+      "studs": true,
+      "male_diameter_correction": 0.0,
+      "female_radial_clearance": 0.04,
+      "roof_mm": 1.0,
+      "open_bottom": true,
+      "print_orientation": "open_bottom_down",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "bounds_mm": [
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          31.900000000000002,
+          47.9,
+          5.0
+        ]
+      ],
+      "volume_mm3": 3809.881756568943,
+      "stl": "stl/P-4x6.stl",
+      "sha256": "34756b1c900a879ef3f171e46d4f2fa8d5755baea79f585b9500429d09e54cd6",
+      "brep_valid": true,
+      "solid_count": 1,
+      "triangles": 22948,
+      "minimum_outer_wall_mm": 1.46,
+      "minimum_entry_wall_mm": 1.26,
+      "roof_bridge_span_mm": 6.8
+    },
+    "P-2x6": {
+      "id": "P-2x6",
+      "kind": "brick",
+      "nx": 2,
+      "ny": 6,
+      "body_height": 3.2,
+      "studs": true,
+      "male_diameter_correction": 0.0,
+      "female_radial_clearance": 0.04,
+      "roof_mm": 1.0,
+      "open_bottom": true,
+      "print_orientation": "open_bottom_down",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "bounds_mm": [
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          15.9,
+          47.9,
+          5.0
+        ]
+      ],
+      "volume_mm3": 1913.5886232088512,
+      "stl": "stl/P-2x6.stl",
+      "sha256": "9385ee128a8629970994ee8b45447a9c625d36aa10b6f70e0397bf2a30f3f920",
+      "brep_valid": true,
+      "solid_count": 1,
+      "triangles": 9676,
+      "minimum_outer_wall_mm": 1.46,
+      "minimum_entry_wall_mm": 1.26,
+      "roof_bridge_span_mm": 6.8
+    },
+    "P-2x4": {
+      "id": "P-2x4",
+      "kind": "brick",
+      "nx": 2,
+      "ny": 4,
+      "body_height": 3.2,
+      "studs": true,
+      "male_diameter_correction": 0.0,
+      "female_radial_clearance": 0.04,
+      "roof_mm": 1.0,
+      "open_bottom": true,
+      "print_orientation": "open_bottom_down",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "bounds_mm": [
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          15.9,
+          31.900000000000002,
+          5.0
+        ]
+      ],
+      "volume_mm3": 1281.008339333706,
+      "stl": "stl/P-2x4.stl",
+      "sha256": "4cf010fb8b62d817aa2085bfaf0d077c93d2ab312dc77ad50002a7392850f701",
+      "brep_valid": true,
+      "solid_count": 1,
+      "triangles": 6212,
+      "minimum_outer_wall_mm": 1.46,
+      "minimum_entry_wall_mm": 1.26,
+      "roof_bridge_span_mm": 6.8
+    },
+    "MUG-2x3": {
+      "id": "MUG-2x3",
+      "kind": "mug",
+      "nx": 2,
+      "ny": 3,
+      "body_height": 3.2,
+      "studs": false,
+      "male_diameter_correction": 0.0,
+      "female_radial_clearance": 0.04,
+      "roof_mm": 1.0,
+      "open_bottom": true,
+      "print_orientation": "open_bottom_down",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "feature_notes": "Cup wall 1.8 mm; handle 2.4 mm; handle roof span 5.2 mm.",
+      "bounds_mm": [
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          15.9,
+          23.900000000000002,
+          14.4
+        ]
+      ],
+      "volume_mm3": 1695.2775880410104,
+      "stl": "stl/MUG-2x3.stl",
+      "sha256": "822bc94b64bb1a5c95fb4f923c0f829b68d09ccf8bf1ca99df0cb2ea78f2e3a5",
+      "brep_valid": true,
+      "solid_count": 1,
+      "triangles": 2302,
+      "minimum_outer_wall_mm": 1.46,
+      "minimum_entry_wall_mm": 1.26,
+      "roof_bridge_span_mm": 6.8
+    },
+    "P-6x6": {
+      "id": "P-6x6",
+      "kind": "brick",
+      "nx": 6,
+      "ny": 6,
+      "body_height": 3.2,
+      "studs": true,
+      "male_diameter_correction": 0.0,
+      "female_radial_clearance": 0.04,
+      "roof_mm": 1.0,
+      "open_bottom": true,
+      "print_orientation": "open_bottom_down",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "bounds_mm": [
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          47.9,
+          47.9,
+          5.0
+        ]
+      ],
+      "volume_mm3": 5706.174886535373,
+      "stl": "stl/P-6x6.stl",
+      "sha256": "ed47322b69312c467be2309fad77bb3e6772bf99d31993fcb57a5e9783e640f2",
+      "brep_valid": true,
+      "solid_count": 1,
+      "triangles": 36220,
+      "minimum_outer_wall_mm": 1.46,
+      "minimum_entry_wall_mm": 1.26,
+      "roof_bridge_span_mm": 6.8
+    },
+    "EAR-2x2": {
+      "id": "EAR-2x2",
+      "kind": "ear",
+      "nx": 2,
+      "ny": 2,
+      "body_height": 3.2,
+      "studs": false,
+      "male_diameter_correction": 0.0,
+      "female_radial_clearance": 0.04,
+      "roof_mm": 1.0,
+      "open_bottom": true,
+      "print_orientation": "open_bottom_down",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "feature_notes": "Solid sloping ear above an open-bottom 2x2 plate.",
+      "bounds_mm": [
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          15.9,
+          15.9,
+          12.8
+        ]
+      ],
+      "volume_mm3": 1917.9434297861703,
+      "stl": "stl/EAR-2x2.stl",
+      "sha256": "fd1317648d1f3bb89b101a702295a7c1d0b95534f3fe2e841200105c18a65f90",
+      "brep_valid": true,
+      "solid_count": 1,
+      "triangles": 852,
+      "minimum_outer_wall_mm": 1.46,
+      "minimum_entry_wall_mm": 1.26,
+      "roof_bridge_span_mm": 6.8
+    },
+    "KEY-2x6": {
+      "id": "KEY-2x6",
+      "kind": "keyboard",
+      "nx": 2,
+      "ny": 6,
+      "body_height": 3.2,
+      "studs": false,
+      "male_diameter_correction": 0.0,
+      "female_radial_clearance": 0.04,
+      "roof_mm": 1.0,
+      "open_bottom": true,
+      "print_orientation": "open_bottom_down",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "feature_notes": "20 integral raised keys, 0.7 mm relief; no separate keycaps.",
+      "bounds_mm": [
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          15.9,
+          47.9,
+          3.9000000000000004
+        ]
+      ],
+      "volume_mm3": 1749.522748754896,
+      "stl": "stl/KEY-2x6.stl",
+      "sha256": "071c2cd3e317df08825230894246fe62eb3d047b928047e2647e963273334b3e",
+      "brep_valid": true,
+      "solid_count": 1,
+      "triangles": 4308,
+      "minimum_outer_wall_mm": 1.46,
+      "minimum_entry_wall_mm": 1.26,
+      "roof_bridge_span_mm": 6.8
+    },
+    "FIT-M-D470": {
+      "id": "FIT-M-D470",
+      "kind": "brick",
+      "nx": 2,
+      "ny": 2,
+      "body_height": 9.6,
+      "studs": true,
+      "male_diameter_correction": -0.1,
+      "female_radial_clearance": 0.04,
+      "roof_mm": 1.6,
+      "open_bottom": true,
+      "print_orientation": "open_bottom_down",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "test_only": true,
+      "bounds_mm": [
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          15.9,
+          15.9,
+          11.4
+        ]
+      ],
+      "volume_mm3": 1510.7678205711843,
+      "stl": "coupons/FIT-M-D470.stl",
+      "sha256": "22a9ef0621b0e8843f842fc246bc8906fcb5605d80e47b363829d2e9140365da",
+      "brep_valid": true,
+      "solid_count": 1,
+      "triangles": 2748,
+      "minimum_outer_wall_mm": 1.46,
+      "minimum_entry_wall_mm": 1.26,
+      "roof_bridge_span_mm": 6.8
+    },
+    "FIT-M-D480": {
+      "id": "FIT-M-D480",
+      "kind": "brick",
+      "nx": 2,
+      "ny": 2,
+      "body_height": 9.6,
+      "studs": true,
+      "male_diameter_correction": 0.0,
+      "female_radial_clearance": 0.04,
+      "roof_mm": 1.6,
+      "open_bottom": true,
+      "print_orientation": "open_bottom_down",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "test_only": true,
+      "bounds_mm": [
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          15.9,
+          15.9,
+          11.4
+        ]
+      ],
+      "volume_mm3": 1516.1006741006508,
+      "stl": "coupons/FIT-M-D480.stl",
+      "sha256": "b358332bde8f6a8f6415e169c49f1ed86f224e4bc63f3e7cf49fff82fef115d5",
+      "brep_valid": true,
+      "solid_count": 1,
+      "triangles": 2748,
+      "minimum_outer_wall_mm": 1.46,
+      "minimum_entry_wall_mm": 1.26,
+      "roof_bridge_span_mm": 6.8
+    },
+    "FIT-M-D490": {
+      "id": "FIT-M-D490",
+      "kind": "brick",
+      "nx": 2,
+      "ny": 2,
+      "body_height": 9.6,
+      "studs": true,
+      "male_diameter_correction": 0.1,
+      "female_radial_clearance": 0.04,
+      "roof_mm": 1.6,
+      "open_bottom": true,
+      "print_orientation": "open_bottom_down",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "test_only": true,
+      "bounds_mm": [
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          15.9,
+          15.9,
+          11.4
+        ]
+      ],
+      "volume_mm3": 1521.546624965652,
+      "stl": "coupons/FIT-M-D490.stl",
+      "sha256": "b9da1364e253f2313d63a69c46b716ca462d8d3594a619171b4781fcd1d7ee0d",
+      "brep_valid": true,
+      "solid_count": 1,
+      "triangles": 2748,
+      "minimum_outer_wall_mm": 1.46,
+      "minimum_entry_wall_mm": 1.26,
+      "roof_bridge_span_mm": 6.8
+    },
+    "FIT-F-CN04": {
+      "id": "FIT-F-CN04",
+      "kind": "tile",
+      "nx": 2,
+      "ny": 2,
+      "body_height": 9.6,
+      "studs": false,
+      "male_diameter_correction": 0.0,
+      "female_radial_clearance": -0.04,
+      "roof_mm": 1.6,
+      "open_bottom": true,
+      "print_orientation": "open_bottom_down",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "test_only": true,
+      "bounds_mm": [
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          15.9,
+          15.9,
+          9.6
+        ]
+      ],
+      "volume_mm3": 1427.3390630019435,
+      "stl": "coupons/FIT-F-CN04.stl",
+      "sha256": "cb44386d6e391465c35a4e7453be4b8f01655d2bdf3fd0895beb168529a15aaa",
+      "brep_valid": true,
+      "solid_count": 1,
+      "triangles": 868,
+      "minimum_outer_wall_mm": 1.54,
+      "minimum_entry_wall_mm": 1.34,
+      "roof_bridge_span_mm": 6.8
+    },
+    "FIT-F-C000": {
+      "id": "FIT-F-C000",
+      "kind": "tile",
+      "nx": 2,
+      "ny": 2,
+      "body_height": 9.6,
+      "studs": false,
+      "male_diameter_correction": 0.0,
+      "female_radial_clearance": 0,
+      "roof_mm": 1.6,
+      "open_bottom": true,
+      "print_orientation": "open_bottom_down",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "test_only": true,
+      "bounds_mm": [
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          15.9,
+          15.9,
+          9.6
+        ]
+      ],
+      "volume_mm3": 1407.4964332875934,
+      "stl": "coupons/FIT-F-C000.stl",
+      "sha256": "6fcd0472af1fafc09ad7d7afd1031efafe2199dc306cee2153f62ea015396f31",
+      "brep_valid": true,
+      "solid_count": 1,
+      "triangles": 868,
+      "minimum_outer_wall_mm": 1.5,
+      "minimum_entry_wall_mm": 1.3,
+      "roof_bridge_span_mm": 6.8
+    },
+    "FIT-F-CP04": {
+      "id": "FIT-F-CP04",
+      "kind": "tile",
+      "nx": 2,
+      "ny": 2,
+      "body_height": 9.6,
+      "studs": false,
+      "male_diameter_correction": 0.0,
+      "female_radial_clearance": 0.04,
+      "roof_mm": 1.6,
+      "open_bottom": true,
+      "print_orientation": "open_bottom_down",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "test_only": true,
+      "bounds_mm": [
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          15.9,
+          15.9,
+          9.6
+        ]
+      ],
+      "volume_mm3": 1387.6320493715293,
+      "stl": "coupons/FIT-F-CP04.stl",
+      "sha256": "199f18cd01749b6336d686577512f046da1d1ee2fc56580a81bdebad2e0d4ee2",
+      "brep_valid": true,
+      "solid_count": 1,
+      "triangles": 852,
+      "minimum_outer_wall_mm": 1.46,
+      "minimum_entry_wall_mm": 1.26,
+      "roof_bridge_span_mm": 6.8
+    },
+    "FIT-F-CP08": {
+      "id": "FIT-F-CP08",
+      "kind": "tile",
+      "nx": 2,
+      "ny": 2,
+      "body_height": 9.6,
+      "studs": false,
+      "male_diameter_correction": 0.0,
+      "female_radial_clearance": 0.08,
+      "roof_mm": 1.6,
+      "open_bottom": true,
+      "print_orientation": "open_bottom_down",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "test_only": true,
+      "bounds_mm": [
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          15.9,
+          15.9,
+          9.6
+        ]
+      ],
+      "volume_mm3": 1367.7459197961116,
+      "stl": "coupons/FIT-F-CP08.stl",
+      "sha256": "5bb892e9f81891583429d02f4ec9d7abd7e8bbe3972010af7fd6e2192c50b034",
+      "brep_valid": true,
+      "solid_count": 1,
+      "triangles": 852,
+      "minimum_outer_wall_mm": 1.42,
+      "minimum_entry_wall_mm": 1.22,
+      "roof_bridge_span_mm": 6.8
+    },
+    "FIT-F-CP12": {
+      "id": "FIT-F-CP12",
+      "kind": "tile",
+      "nx": 2,
+      "ny": 2,
+      "body_height": 9.6,
+      "studs": false,
+      "male_diameter_correction": 0.0,
+      "female_radial_clearance": 0.12,
+      "roof_mm": 1.6,
+      "open_bottom": true,
+      "print_orientation": "open_bottom_down",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "test_only": true,
+      "bounds_mm": [
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          15.9,
+          15.9,
+          9.6
+        ]
+      ],
+      "volume_mm3": 1347.8380535521976,
+      "stl": "coupons/FIT-F-CP12.stl",
+      "sha256": "eaf9d5bfc44a85e4ff5c6889a6152bc3835c340b5500a2210fc160f3e4751b7c",
+      "brep_valid": true,
+      "solid_count": 1,
+      "triangles": 852,
+      "minimum_outer_wall_mm": 1.38,
+      "minimum_entry_wall_mm": 1.18,
+      "roof_bridge_span_mm": 6.8
+    }
+  },
+  "assembly_bounds_mm": [
+    [
+      0.1,
+      0.1,
+      0.0
+    ],
+    [
+      191.9,
+      127.90000000000002,
+      128.0
+    ]
+  ],
+  "assembly_size_mm": [
+    191.8,
+    127.80000000000003,
+    128.0
+  ],
+  "assembly_volume_mm3": 436628.16434400313,
+  "native": "cad/Octodesk-r1.FCStd",
+  "step": "cad/Octodesk-r1.step"
+}

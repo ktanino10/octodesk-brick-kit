@@ -1,0 +1,30 @@
+Octodesk brick kit / 机と猫耳のブロック・ジオラマ
+
+This is an independent, unofficial display model. It is not an official LEGO,
+GitHub or Bambu Lab product, and no commercial-brick compatibility, endorsement
+or toy certification is claimed.
+
+No blanket license has been selected for the original source code, CAD, artwork
+or documentation. Public availability does not grant unrestricted reuse rights.
+Please contact the repository owner about reuse. This notice does not change
+the licenses of third-party components.
+
+Three.js 0.180.0 is redistributed under the MIT license, retained in
+dist/octodesk-r1/licenses/THREE-LICENSE.txt and in the offline package.
+FreeCAD, Blender, ffmpeg, Python and Node.js are build tools, not bundled
+application binaries. Font files are not redistributed.
+
+A user-supplied photograph was viewed as a reference for the scene. The source
+photograph, product box, logos and printed branding are not included.
+The 8 mm mechanical dimensions and workflow were informed by Copilot Brick
+Display at commit 0967390547184b342adea0d7e8659dc8ac8f153b. Its original code,
+CAD, artwork and fonts were not copied; that reference has no blanket license.
+
+The authorized publication targets are ktanino10/octodesk-brick-kit on GitHub,
+its GitHub Pages site, and this repository's release assets. This authorization
+does not establish a license to republish third-party material elsewhere.
+
+All supplied 3MF files are NOT_SLICED geometry. The intended printer is
+Bambu Lab P1S with a 0.2 mm nozzle and PLA. Actual profile, plate, fit,
+strength, retention and stability remain unverified. Print the small loose-fit
+test pair first. No printer transmission or print start is performed.

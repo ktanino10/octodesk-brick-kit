@@ -1,0 +1,425 @@
+{
+  "renderer": "Blender EEVEE stills; Workbench studio assembly animation",
+  "blender": "5.1.1",
+  "distributed_stl": true,
+  "mm_to_m": 0.001,
+  "instances": 137,
+  "assembly_end_frame": 445,
+  "frames": 493,
+  "fps": 12,
+  "frame_steps": [
+    {
+      "start": 2,
+      "end": 13,
+      "step": 1,
+      "instances": [
+        "O-001",
+        "O-002",
+        "O-003",
+        "O-004",
+        "O-005",
+        "O-006"
+      ]
+    },
+    {
+      "start": 14,
+      "end": 25,
+      "step": 2,
+      "instances": [
+        "O-007",
+        "O-008",
+        "O-009",
+        "O-010",
+        "O-011",
+        "O-012",
+        "O-013",
+        "O-014",
+        "O-015",
+        "O-016",
+        "O-017",
+        "O-018"
+      ]
+    },
+    {
+      "start": 26,
+      "end": 37,
+      "step": 3,
+      "instances": [
+        "O-019",
+        "O-020",
+        "O-021",
+        "O-022"
+      ]
+    },
+    {
+      "start": 38,
+      "end": 49,
+      "step": 4,
+      "instances": [
+        "O-023",
+        "O-024",
+        "O-025",
+        "O-026"
+      ]
+    },
+    {
+      "start": 50,
+      "end": 61,
+      "step": 5,
+      "instances": [
+        "O-027",
+        "O-028",
+        "O-029",
+        "O-030"
+      ]
+    },
+    {
+      "start": 62,
+      "end": 73,
+      "step": 6,
+      "instances": [
+        "O-031",
+        "O-032",
+        "O-033",
+        "O-034",
+        "O-035",
+        "O-036",
+        "O-037",
+        "O-038"
+      ]
+    },
+    {
+      "start": 74,
+      "end": 85,
+      "step": 7,
+      "instances": [
+        "O-039",
+        "O-040",
+        "O-041",
+        "O-042",
+        "O-043",
+        "O-044",
+        "O-045",
+        "O-046"
+      ]
+    },
+    {
+      "start": 86,
+      "end": 97,
+      "step": 8,
+      "instances": [
+        "O-047",
+        "O-048",
+        "O-049",
+        "O-050",
+        "O-051",
+        "O-052",
+        "O-053",
+        "O-054"
+      ]
+    },
+    {
+      "start": 98,
+      "end": 109,
+      "step": 9,
+      "instances": [
+        "O-055",
+        "O-056",
+        "O-057",
+        "O-058",
+        "O-059",
+        "O-060",
+        "O-061",
+        "O-062"
+      ]
+    },
+    {
+      "start": 110,
+      "end": 121,
+      "step": 10,
+      "instances": [
+        "O-063",
+        "O-064",
+        "O-065",
+        "O-066",
+        "O-067",
+        "O-068",
+        "O-069",
+        "O-070"
+      ]
+    },
+    {
+      "start": 122,
+      "end": 133,
+      "step": 11,
+      "instances": [
+        "O-071",
+        "O-072"
+      ]
+    },
+    {
+      "start": 134,
+      "end": 145,
+      "step": 12,
+      "instances": [
+        "O-073",
+        "O-074"
+      ]
+    },
+    {
+      "start": 146,
+      "end": 157,
+      "step": 13,
+      "instances": [
+        "O-075",
+        "O-076"
+      ]
+    },
+    {
+      "start": 158,
+      "end": 169,
+      "step": 14,
+      "instances": [
+        "O-077",
+        "O-078",
+        "O-079"
+      ]
+    },
+    {
+      "start": 170,
+      "end": 181,
+      "step": 15,
+      "instances": [
+        "O-080",
+        "O-081"
+      ]
+    },
+    {
+      "start": 182,
+      "end": 193,
+      "step": 16,
+      "instances": [
+        "O-082",
+        "O-083",
+        "O-084"
+      ]
+    },
+    {
+      "start": 194,
+      "end": 205,
+      "step": 17,
+      "instances": [
+        "O-085"
+      ]
+    },
+    {
+      "start": 206,
+      "end": 217,
+      "step": 18,
+      "instances": [
+        "O-086",
+        "O-087",
+        "O-088",
+        "O-089"
+      ]
+    },
+    {
+      "start": 218,
+      "end": 229,
+      "step": 19,
+      "instances": [
+        "O-090",
+        "O-091"
+      ]
+    },
+    {
+      "start": 230,
+      "end": 241,
+      "step": 20,
+      "instances": [
+        "O-092",
+        "O-093",
+        "O-094"
+      ]
+    },
+    {
+      "start": 242,
+      "end": 253,
+      "step": 21,
+      "instances": [
+        "O-095",
+        "O-096",
+        "O-097",
+        "O-098",
+        "O-099",
+        "O-100"
+      ]
+    },
+    {
+      "start": 254,
+      "end": 265,
+      "step": 22,
+      "instances": [
+        "O-101",
+        "O-102"
+      ]
+    },
+    {
+      "start": 266,
+      "end": 277,
+      "step": 23,
+      "instances": [
+        "O-103",
+        "O-104"
+      ]
+    },
+    {
+      "start": 278,
+      "end": 289,
+      "step": 24,
+      "instances": [
+        "O-105"
+      ]
+    },
+    {
+      "start": 290,
+      "end": 301,
+      "step": 25,
+      "instances": [
+        "O-106"
+      ]
+    },
+    {
+      "start": 302,
+      "end": 313,
+      "step": 26,
+      "instances": [
+        "O-107",
+        "O-108",
+        "O-109",
+        "O-110",
+        "O-111"
+      ]
+    },
+    {
+      "start": 314,
+      "end": 325,
+      "step": 27,
+      "instances": [
+        "O-112",
+        "O-113",
+        "O-114",
+        "O-115",
+        "O-116"
+      ]
+    },
+    {
+      "start": 326,
+      "end": 337,
+      "step": 28,
+      "instances": [
+        "O-117",
+        "O-118",
+        "O-119",
+        "O-120",
+        "O-121"
+      ]
+    },
+    {
+      "start": 338,
+      "end": 349,
+      "step": 29,
+      "instances": [
+        "O-122"
+      ]
+    },
+    {
+      "start": 350,
+      "end": 361,
+      "step": 30,
+      "instances": [
+        "O-123",
+        "O-124"
+      ]
+    },
+    {
+      "start": 362,
+      "end": 373,
+      "step": 31,
+      "instances": [
+        "O-125"
+      ]
+    },
+    {
+      "start": 374,
+      "end": 385,
+      "step": 32,
+      "instances": [
+        "O-126",
+        "O-127"
+      ]
+    },
+    {
+      "start": 386,
+      "end": 397,
+      "step": 33,
+      "instances": [
+        "O-128",
+        "O-129",
+        "O-130"
+      ]
+    },
+    {
+      "start": 398,
+      "end": 409,
+      "step": 34,
+      "instances": [
+        "O-131",
+        "O-132"
+      ]
+    },
+    {
+      "start": 410,
+      "end": 421,
+      "step": 35,
+      "instances": [
+        "O-133",
+        "O-134",
+        "O-135"
+      ]
+    },
+    {
+      "start": 422,
+      "end": 433,
+      "step": 36,
+      "instances": [
+        "O-136"
+      ]
+    },
+    {
+      "start": 434,
+      "end": 445,
+      "step": 37,
+      "instances": [
+        "O-137"
+      ]
+    }
+  ],
+  "mesh_hashes": {
+    "P-8x8": "28bae1bfcb359f7891e2657b1fc202bf3e3a6138c906a7f0b0f13d2c396725f4",
+    "P-4x4": "95c27150e78c4452f8dd7ebc09cdb2471109727bddb603cf9e53336227526e9e",
+    "P-4x8": "41c237d048e3931ce5ddd7ef0ca9e3bc30086f1ebba9de02e3625c4d4c6525bc",
+    "B-2x2": "b358332bde8f6a8f6415e169c49f1ed86f224e4bc63f3e7cf49fff82fef115d5",
+    "B-2x4": "19d9f7506594fc493fa36bbca0e4a84841175a0c12bae3f4787cd0ac87d72735",
+    "T-2x8": "9b455c78f1ce18a9daa1921366f49e68425b0882e9c9056b7bbeae1f8fb97375",
+    "B-1x2": "14cb4d74ac37a349bd79456d3c35ee8c19f4665e811baecfe4df4d897c77fc26",
+    "P-4x10": "a9fb78af406d4e9a1503782f4c012f6f5d2a018ecc9b36902df8b1fe934babe6",
+    "P-4x6": "34756b1c900a879ef3f171e46d4f2fa8d5755baea79f585b9500429d09e54cd6",
+    "P-2x6": "9385ee128a8629970994ee8b45447a9c625d36aa10b6f70e0397bf2a30f3f920",
+    "P-2x4": "4cf010fb8b62d817aa2085bfaf0d077c93d2ab312dc77ad50002a7392850f701",
+    "MUG-2x3": "822bc94b64bb1a5c95fb4f923c0f829b68d09ccf8bf1ca99df0cb2ea78f2e3a5",
+    "P-6x6": "ed47322b69312c467be2309fad77bb3e6772bf99d31993fcb57a5e9783e640f2",
+    "EAR-2x2": "fd1317648d1f3bb89b101a702295a7c1d0b95534f3fe2e841200105c18a65f90",
+    "KEY-2x6": "071c2cd3e317df08825230894246fe62eb3d047b928047e2647e963273334b3e"
+  }
+}

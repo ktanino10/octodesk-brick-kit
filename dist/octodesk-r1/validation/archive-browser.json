@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "smoke_only": false,
+  "browser": "141.0.7390.37",
+  "desktop": [
+    1365,
+    1000
+  ],
+  "mobile": [
+    375,
+    812
+  ],
+  "file_protocol": true,
+  "network_disabled": true,
+  "errors": [],
+  "checks": [
+    "desktop-http: genuinely empty step zero",
+    "desktop-http: next, previous, play, pause",
+    "desktop-http: isolated step replay stops at boundary",
+    "desktop-http: file-slot-instance and reverse mapping, underside",
+    "desktop-http: completion, explosion 0/50/100/0, exact transforms, six views",
+    "desktop-http: actual HTML5 video decode",
+    "desktop-http: hidden tab pauses rather than skipping steps",
+    "mobile-http: genuinely empty step zero",
+    "mobile-http: next, previous, play, pause",
+    "mobile-http: isolated step replay stops at boundary",
+    "mobile-http: file-slot-instance and reverse mapping, underside",
+    "mobile-http: completion, explosion 0/50/100/0, exact transforms, six views",
+    "mobile-http: actual HTML5 video decode",
+    "mobile-http: hidden tab pauses rather than skipping steps",
+    "offline-file: genuinely empty step zero",
+    "offline-file: next, previous, play, pause",
+    "offline-file: isolated step replay stops at boundary",
+    "offline-file: file-slot-instance and reverse mapping, underside",
+    "offline-file: completion, explosion 0/50/100/0, exact transforms, six views",
+    "offline-file: actual HTML5 video decode",
+    "offline-file: hidden tab pauses rather than skipping steps",
+    "offline-file: network disabled and zero HTTP(S) requests"
+  ],
+  "live_public_base_url": null
+}
