@@ -1,0 +1,192 @@
+1
+00:00:00,000 --> 00:00:00,083
+Desk & Cat-Eared Character / starting with an empty table
+
+2
+00:00:00,083 --> 00:00:01,083
+Step 1/37 · Green base: lower layer
+Add: O-001 / O-002 / O-003 / O-004 / O-005 / O-006
+
+3
+00:00:01,083 --> 00:00:02,083
+Step 2/37 · Green base: offset upper layer
+Add: O-007 / O-008 / O-009 / O-010 / O-011 / O-012 / O-013 / O-014 / O-015 / O-016 / O-017 / O-018
+
+4
+00:00:02,083 --> 00:00:03,083
+Step 3/37 · Chair legs: course 1
+Add: O-019 / O-020 / O-021 / O-022
+
+5
+00:00:03,083 --> 00:00:04,083
+Step 4/37 · Chair legs: course 2
+Add: O-023 / O-024 / O-025 / O-026
+
+6
+00:00:04,083 --> 00:00:05,083
+Step 5/37 · Chair legs: course 3
+Add: O-027 / O-028 / O-029 / O-030
+
+7
+00:00:05,083 --> 00:00:06,083
+Step 6/37 · Desk supports: course 1
+Add: O-031 / O-032 / O-033 / O-034 / O-035 / O-036 / O-037 / O-038
+
+8
+00:00:06,083 --> 00:00:07,083
+Step 7/37 · Desk supports: course 2
+Add: O-039 / O-040 / O-041 / O-042 / O-043 / O-044 / O-045 / O-046
+
+9
+00:00:07,083 --> 00:00:08,083
+Step 8/37 · Desk supports: course 3
+Add: O-047 / O-048 / O-049 / O-050 / O-051 / O-052 / O-053 / O-054
+
+10
+00:00:08,083 --> 00:00:09,083
+Step 9/37 · Desk supports: course 4
+Add: O-055 / O-056 / O-057 / O-058 / O-059 / O-060 / O-061 / O-062
+
+11
+00:00:09,083 --> 00:00:10,083
+Step 10/37 · Desk supports: course 5
+Add: O-063 / O-064 / O-065 / O-066 / O-067 / O-068 / O-069 / O-070
+
+12
+00:00:10,083 --> 00:00:11,083
+Step 11/37 · Chair seat: lower layer
+Add: O-071 / O-072
+
+13
+00:00:11,083 --> 00:00:12,083
+Step 12/37 · Chair seat: upper layer
+Add: O-073 / O-074
+
+14
+00:00:12,083 --> 00:00:13,083
+Step 13/37 · White chair back: course 1
+Add: O-075 / O-076
+
+15
+00:00:13,083 --> 00:00:14,083
+Step 14/37 · White chair back: course 2
+Add: O-077 / O-078 / O-079
+
+16
+00:00:14,083 --> 00:00:15,083
+Step 15/37 · White chair back: course 3
+Add: O-080 / O-081
+
+17
+00:00:15,083 --> 00:00:16,083
+Step 16/37 · White chair back: course 4
+Add: O-082 / O-083 / O-084
+
+18
+00:00:16,083 --> 00:00:17,083
+Step 17/37 · Cap the chair back
+Add: O-085
+
+19
+00:00:17,083 --> 00:00:18,083
+Step 18/37 · Seated character: feet and lower torso
+Add: O-086 / O-087 / O-088 / O-089
+
+20
+00:00:18,083 --> 00:00:19,083
+Step 19/37 · Character: upper torso
+Add: O-090 / O-091
+
+21
+00:00:19,083 --> 00:00:20,083
+Step 20/37 · Desktop: lower layer
+Add: O-092 / O-093 / O-094
+
+22
+00:00:20,083 --> 00:00:21,083
+Step 21/37 · Desktop: upper layer
+Add: O-095 / O-096 / O-097 / O-098 / O-099 / O-100
+
+23
+00:00:21,083 --> 00:00:22,083
+Step 22/37 · Arms reaching toward the desk
+Add: O-101 / O-102
+
+24
+00:00:22,083 --> 00:00:23,083
+Step 23/37 · Shoulders and neck
+Add: O-103 / O-104
+
+25
+00:00:23,083 --> 00:00:24,083
+Step 24/37 · Attach the yellow mug
+Add: O-105
+
+26
+00:00:24,083 --> 00:00:25,083
+Step 25/37 · Black lower head rim
+Add: O-106
+
+27
+00:00:25,083 --> 00:00:26,083
+Step 26/37 · Square head and beige face: course 1
+Add: O-107 / O-108 / O-109 / O-110 / O-111
+
+28
+00:00:26,083 --> 00:00:27,083
+Step 27/37 · Square head and beige face: course 2
+Add: O-112 / O-113 / O-114 / O-115 / O-116
+
+29
+00:00:27,083 --> 00:00:28,083
+Step 28/37 · Square head and beige face: course 3
+Add: O-117 / O-118 / O-119 / O-120 / O-121
+
+30
+00:00:28,083 --> 00:00:29,083
+Step 29/37 · Black upper head rim
+Add: O-122
+
+31
+00:00:29,083 --> 00:00:30,083
+Step 30/37 · Two cat ears
+Add: O-123 / O-124
+
+32
+00:00:30,083 --> 00:00:31,083
+Step 31/37 · Monitor stand
+Add: O-125
+
+33
+00:00:31,083 --> 00:00:32,083
+Step 32/37 · White monitor: course 1
+Add: O-126 / O-127
+
+34
+00:00:32,083 --> 00:00:33,083
+Step 33/37 · White monitor: course 2
+Add: O-128 / O-129 / O-130
+
+35
+00:00:33,083 --> 00:00:34,083
+Step 34/37 · White monitor: course 3
+Add: O-131 / O-132
+
+36
+00:00:34,083 --> 00:00:35,083
+Step 35/37 · White monitor: course 4
+Add: O-133 / O-134 / O-135
+
+37
+00:00:35,083 --> 00:00:36,083
+Step 36/37 · Cap the monitor
+Add: O-136
+
+38
+00:00:36,083 --> 00:00:37,083
+Step 37/37 · White keyboard
+Add: O-137
+
+39
+00:00:37,083 --> 00:00:41,083
+Complete / 137 parts / 37 steps / turntable

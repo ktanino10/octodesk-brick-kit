@@ -1,22 +1,27 @@
 {
   "file": "octodesk-r1-offline.zip",
-  "bytes": 51326150,
-  "sha256": "97c4afa4ce8ebc1ebadf312e1e27db01e68a1b2a2f5fa456714afff85945979e",
-  "files": 128,
-  "internal_links_checked": 36,
-  "extracted_files_hash_verified": 127,
-  "payload_sha256": "93a11ede0bca8fc788d5ae7afc141e07e5a30f101d50b452fc720b24bed49804",
+  "bytes": 53033202,
+  "sha256": "87054eb3f98572f646d3b2baa6469bd62d12ac7c80c47400a134d6734833f9c8",
+  "files": 144,
+  "internal_links_checked": 52,
+  "extracted_files_hash_verified": 143,
+  "payload_sha256": "12d26df4c8661754f4002bd0657d133683b619eb1444ba03de4d6f68c0cdbb81",
   "finalized": true,
   "publication": {
-    "edition": "r1-public-1",
+    "edition": "r1-public-bilingual",
     "geometry_revision": "1.0.0",
     "authorized_on": "2026-09-25",
     "repository": "https://github.com/ktanino10/octodesk-brick-kit",
     "pages": "https://ktanino10.github.io/octodesk-brick-kit/",
-    "release_tag": "v1.0.0",
-    "release": "https://github.com/ktanino10/octodesk-brick-kit/releases/tag/v1.0.0",
+    "release_tag": "v1.0.1",
+    "release": "https://github.com/ktanino10/octodesk-brick-kit/releases/tag/v1.0.1",
     "archive_name": "octodesk-r1-offline.zip",
-    "archive_url": "https://github.com/ktanino10/octodesk-brick-kit/releases/download/v1.0.0/octodesk-r1-offline.zip",
+    "archive_url": "https://github.com/ktanino10/octodesk-brick-kit/releases/download/v1.0.1/octodesk-r1-offline.zip",
+    "languages": [
+      "ja",
+      "en"
+    ],
+    "english_pages": "https://ktanino10.github.io/octodesk-brick-kit/?lang=en",
     "source_visibility": "public",
     "scope": [
       "design-source",
@@ -24,7 +29,9 @@
       "native-cad",
       "renders",
       "animation",
-      "japanese-guide",
+      "bilingual-guide",
+      "bilingual-pdf",
+      "bilingual-subtitles",
       "offline-archive"
     ],
     "excluded": [

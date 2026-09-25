@@ -59,12 +59,34 @@ function observe(page, label) {
   });
 }
 
-async function inspect(page, label, media) {
+async function assertLanguage(page, language) {
+  assert.equal(await page.locator("html").getAttribute("lang"), language);
+  assert.equal(await page.locator(`#language-${language}`).getAttribute("aria-pressed"), "true");
+  assert.match(await page.locator("#next").innerText(), language === "en" ? /Next part/ : /次の1個/);
+  if (language === "en") {
+    const untranslated = await page.evaluate(() => {
+      const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      const found = [];
+      while (walker.nextNode()) {
+        const node = walker.currentNode;
+        if (node.parentElement?.closest("script,style,noscript,[lang='ja'],.language-switch")) continue;
+        if (/[\u3040-\u30ff\u3400-\u9fff]/.test(node.textContent)) found.push(node.textContent.trim().slice(0, 100));
+      }
+      return found;
+    });
+    assert.deepEqual(untranslated, [], "English page contains untranslated Japanese UI text");
+    assert.match(await page.locator(".status-banner").innerText(), /0\.2 mm nozzle.*NOT_SLICED/s);
+    assert.match(await page.locator("footer").innerText(), /No commercial-brick compatibility guarantee/);
+  }
+}
+
+async function inspect(page, label, media, language) {
   console.log("BROWSER_START", label);
   await page.waitForFunction(() => window.OCTODESK_APP?.ready, null, { timeout: 90000 });
   assert.equal(await page.locator("#load-error").isVisible(), false);
   assert.equal(await page.evaluate(() => OCTODESK_APP.getState().count), 0);
   assert.equal(await page.evaluate(() => OCTODESK_APP.getTransforms().filter((x) => x.visible).length), 0);
+  await assertLanguage(page, language);
   checks.push(`${label}: genuinely empty step zero`);
   await page.selectOption("#speed", "300");
   await page.click("#next");
@@ -85,7 +107,7 @@ async function inspect(page, label, media) {
   const mug = kit.instances.find((i) => i.part === "MUG-2x3");
   const step24 = kit.instances.findLastIndex((i) => i.step === 24) + 1;
   assert.equal(await page.evaluate(() => OCTODESK_APP.getState().count), step24);
-  assert.match(await page.locator("#instance-info").textContent(), /工程24/);
+  assert.match(await page.locator("#instance-info").textContent(), language === "en" ? /Step 24/ : /工程24/);
   checks.push(`${label}: isolated step replay stops at boundary`);
   const yellowPlate = manifest.plates.findIndex((p) => p.color === "yellow");
   await page.selectOption("#plate-select", String(yellowPlate));
@@ -99,6 +121,23 @@ async function inspect(page, label, media) {
   await page.locator('.views[data-viewer="plate"] [data-view="bottom"]').click();
   await page.uncheck("#isolate-part");
   checks.push(`${label}: file-slot-instance and reverse mapping, underside`);
+  const before = await page.evaluate(() => {
+    const { language, ...state } = OCTODESK_APP.getState();
+    return { state, transforms: OCTODESK_APP.getTransforms() };
+  });
+  const other = language === "en" ? "ja" : "en";
+  await page.click(`#language-${other}`);
+  await assertLanguage(page, other);
+  const after = await page.evaluate(() => {
+    const { language, ...state } = OCTODESK_APP.getState();
+    return { state, transforms: OCTODESK_APP.getTransforms() };
+  });
+  assert.deepEqual(after, before, `${label}: language switch changed assembly or selection`);
+  assert.equal(new URL(page.url()).searchParams.get("lang"), other);
+  await page.click(`#language-${language}`);
+  await assertLanguage(page, language);
+  assert.match(await page.locator("#step-note").innerText(), language === "en" ? /before attaching the head/ : /頭を付ける前/);
+  checks.push(`${label}: both-language toggle preserves progress, selection, slot, transforms and notes`);
   await page.click("#complete");
   assert.equal(await page.evaluate(() => OCTODESK_APP.getState().count), kit.instances.length);
   const original = await page.evaluate(() => OCTODESK_APP.getTransforms());
@@ -132,7 +171,18 @@ async function inspect(page, label, media) {
     });
     await page.waitForFunction(() => document.querySelector("video").currentTime > .25, null, { timeout: 15000 });
     await page.locator("video").evaluate((video) => video.pause());
+    await page.locator("video").evaluate((video) => { video.currentTime = 23.5; });
+    await page.waitForFunction((language) => document.querySelector("#video-caption").textContent.includes(
+      language === "en" ? "Step 24/37" : "工程 24/37"), language);
+    assert.equal(await page.locator("video").evaluate((video, language) =>
+      Array.from(video.textTracks).some((track) => track.language === language && track.mode === "showing"), language), true);
+    const time = await page.locator("video").evaluate((video) => video.currentTime);
+    await page.click(`#language-${other}`);
+    assert.match(await page.locator("#video-caption").innerText(), other === "en" ? /Step 24\/37/ : /工程 24\/37/);
+    assert.ok(Math.abs(await page.locator("video").evaluate((video) => video.currentTime) - time) < .1);
+    await page.click(`#language-${language}`);
     checks.push(`${label}: actual HTML5 video decode`);
+    checks.push(`${label}: timed JA/EN subtitles switch without restarting the common video`);
   }
   await page.locator("#guide").scrollIntoViewIfNeeded();
   await page.screenshot({ path: path.join(evidence, `${label}-guide.png`), fullPage: false });
@@ -152,33 +202,58 @@ async function inspect(page, label, media) {
 }
 
 try {
-  const desktop = await browser.newContext({ viewport: { width: 1365, height: 1000 }, deviceScaleFactor: 1 });
-  const p = await desktop.newPage();
-  observe(p, "desktop-http");
-  await p.goto(url, { waitUntil: "load" });
-  await inspect(p, "desktop-http", true);
-  await desktop.close();
-  const mobile = await browser.newContext({ viewport: { width: 375, height: 812 }, deviceScaleFactor: 1, isMobile: true, hasTouch: true });
-  const m = await mobile.newPage();
-  observe(m, "mobile-http");
-  await m.goto(url, { waitUntil: "load" });
-  await inspect(m, "mobile-http", true);
-  await mobile.close();
-  const offline = await browser.newContext({ viewport: { width: 1280, height: 950 }, offline: true });
-  const f = await offline.newPage();
-  observe(f, "offline-file");
-  const networkRequests = [];
-  f.on("request", (r) => { if (/^https?:/.test(r.url())) networkRequests.push(r.url()); });
-  await f.goto(pathToFileURL(path.join(out, "index.html")).href, { waitUntil: "load" });
-  await inspect(f, "offline-file", true);
-  assert.deepEqual(networkRequests, []);
-  checks.push("offline-file: network disabled and zero HTTP(S) requests");
-  await offline.close();
+  for (const language of ["ja", "en"]) {
+    const target = new URL(url);
+    if (language === "en") target.searchParams.set("lang", "en");
+    const suffix = language === "en" ? "-en" : "";
+    const desktop = await browser.newContext({ viewport: { width: 1365, height: 1000 }, deviceScaleFactor: 1 });
+    const p = await desktop.newPage();
+    observe(p, `desktop-http${suffix}`);
+    await p.goto(target.href, { waitUntil: "load" });
+    await inspect(p, `desktop-http${suffix}`, true, language);
+    await desktop.close();
+    const mobile = await browser.newContext({ viewport: { width: 375, height: 812 }, deviceScaleFactor: 1, isMobile: true, hasTouch: true });
+    const m = await mobile.newPage();
+    observe(m, `mobile-http${suffix}`);
+    await m.goto(target.href, { waitUntil: "load" });
+    await inspect(m, `mobile-http${suffix}`, true, language);
+    await mobile.close();
+    const offline = await browser.newContext({ viewport: { width: 1280, height: 950 }, offline: true });
+    const f = await offline.newPage();
+    observe(f, `offline-file${suffix}`);
+    const networkRequests = [];
+    f.on("request", (r) => { if (/^https?:/.test(r.url())) networkRequests.push(r.url()); });
+    const file = pathToFileURL(path.join(out, "index.html"));
+    if (language === "en") file.searchParams.set("lang", "en");
+    await f.goto(file.href, { waitUntil: "load" });
+    await inspect(f, `offline-file${suffix}`, true, language);
+    assert.deepEqual(networkRequests, []);
+    checks.push(`offline-file${suffix}: network disabled and zero HTTP(S) requests`);
+    await offline.close();
+  }
+  for (const language of ["ja", "en"]) {
+    const context = await browser.newContext();
+    await context.addInitScript(() => {
+      const original = HTMLCanvasElement.prototype.getContext;
+      HTMLCanvasElement.prototype.getContext = function (kind, ...args) {
+        return kind.startsWith("webgl") ? null : original.call(this, kind, ...args);
+      };
+    });
+    const page = await context.newPage();
+    const target = new URL(url); target.searchParams.set("lang", language);
+    await page.goto(target.href, { waitUntil: "load" });
+    await page.locator("#load-error").waitFor({ state: "visible" });
+    assert.match(await page.locator("#load-error").innerText(), language === "en" ? /could not load.*PDF and CSV/s : /読み込めませんでした.*PDFとCSV/s);
+    await page.click(`#language-${language === "en" ? "ja" : "en"}`);
+    assert.match(await page.locator("#load-error").innerText(), language === "ja" ? /could not load/ : /読み込めませんでした/);
+    checks.push(`${language}: WebGL failure and translated error switch`);
+    await context.close();
+  }
   assert.deepEqual(errors, []);
   const reportPath = process.env.BROWSER_REPORT ? path.resolve(process.env.BROWSER_REPORT) : path.join(out, "validation/browser.json");
   await fs.mkdir(path.dirname(reportPath), { recursive: true });
   await fs.writeFile(reportPath, JSON.stringify({
-    status: "PASS", smoke_only: !strictMedia, browser: browser.version(),
+    status: "PASS", smoke_only: !strictMedia, browser: browser.version(), languages: ["ja", "en"],
     desktop: [1365, 1000], mobile: [375, 812], file_protocol: true,
     network_disabled: true, errors, checks,
     live_public_base_url: process.env.BASE_URL || null

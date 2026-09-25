@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "language": "ja",
+  "language": "en",
   "engine": "Chromium print-to-PDF",
   "logical_pages": 44,
   "source_images": 8,

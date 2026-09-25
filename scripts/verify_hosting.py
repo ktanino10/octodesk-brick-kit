@@ -44,8 +44,13 @@ def main():
     assert repo["full_name"] == repository and repo["private"] is False
     verified = [repo_get]
     stage = BUILD / "pages"
+    _, entry = fetch_verified(publication["english_pages"], sha256(stage / "index.html"),
+                              (stage / "index.html").stat().st_size)
+    verified.append(entry)
     for name in ("index.html", "assets/guide.js", "assets/data.js", "media/hero.png",
                  "media/assembly.mp4", "media/assembly.webm", "docs/assembly-manual.pdf",
+                 "docs/assembly-manual.en.pdf", "docs/notices.en.html",
+                 "media/assembly.en.srt", "media/assembly.en.vtt", "data/translations.json",
                  "coupons/01-loose-pair-NOT_SLICED.3mf", "cad/Octodesk-r1.FCStd",
                  "plates/O-green-01-NOT_SLICED.3mf", "checksums.sha256"):
         local = stage / name
@@ -55,6 +60,13 @@ def main():
     receipt = read_json(ROOT / "dist" / "release-receipt.json")
     _, asset = fetch_verified(publication["archive_url"], receipt["sha256"], receipt["bytes"])
     verified.append(asset)
+    _, receipt_get = fetch_verified(publication["archive_url"].rsplit("/", 1)[0] + "/release-receipt.json",
+                                    sha256(ROOT / "dist" / "release-receipt.json"),
+                                    (ROOT / "dist" / "release-receipt.json").stat().st_size)
+    verified.append(receipt_get)
+    _, readme_get = fetch_verified(f"https://raw.githubusercontent.com/{repository}/main/README.en.md",
+                                   sha256(ROOT / "README.en.md"), (ROOT / "README.en.md").stat().st_size)
+    verified.append(readme_get)
     print("RELEASE_ZIP_GET_VERIFIED", asset["bytes"], flush=True)
     write_json(BUILD / "public-hosting.json", {
         "status": "PASS", "checked_at": datetime.now(timezone.utc).isoformat(),

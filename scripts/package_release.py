@@ -57,7 +57,7 @@ def source_copy():
                 dest = target / directory / file.name
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(file, dest)
-    for file in ("README.md", "NOTICE", "requirements.txt", "package.json", "package-lock.json"):
+    for file in ("README.md", "README.en.md", "NOTICE", "requirements.txt", "package.json", "package-lock.json"):
         target.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(ROOT / file, target / file)
 
@@ -83,23 +83,28 @@ def payload_digest(files):
 
 
 def audit_pdf():
-    file = OUT / "docs" / "assembly-manual.pdf"
-    info = subprocess.check_output(["pdfinfo", str(file)], text=True)
-    page_count = int(re.search(r"Pages:\s+(\d+)", info).group(1))
-    expected_pages = len(kit()["steps"]) + 7
-    assert page_count == expected_pages, (page_count, expected_pages)
-    text = subprocess.check_output(["pdftotext", "-layout", str(file), "-"]).decode("utf-8")
-    compact = re.sub(r"\s+", "", text)
-    assert "0.2mm" in compact and "NOT_SLICED" in compact and "色表示は未確認" in compact
-    for inst in kit()["instances"]:
-        assert inst["id"] in text, inst["id"]
-    for step in kit()["steps"]:
-        assert re.search(rf"工程\s+{step['number']:02d}\s*/", text), step["number"]
+    data = kit()
+    languages = {}
+    for language, suffix in (("ja", ""), ("en", ".en")):
+        file = OUT / "docs" / f"assembly-manual{suffix}.pdf"
+        info = subprocess.check_output(["pdfinfo", str(file)], text=True)
+        page_count = int(re.search(r"Pages:\s+(\d+)", info).group(1))
+        assert page_count == len(data["steps"]) + 7
+        text = subprocess.check_output(["pdftotext", "-layout", str(file), "-"]).decode("utf-8")
+        compact = re.sub(r"\s+", "", text)
+        assert "0.2mm" in compact and "NOT_SLICED" in compact
+        assert ("色表示は未確認" in compact) if language == "ja" else ("GUI" in text and "unverified" in text)
+        for inst in data["instances"]:
+            assert inst["id"] in text, (language, inst["id"])
+        for step in data["steps"]:
+            label = "工程" if language == "ja" else "Step"
+            assert re.search(rf"{label}\s+{step['number']:02d}\s*/", text), (language, step["number"])
+        languages[language] = {"file": f"docs/assembly-manual{suffix}.pdf", "pages": page_count,
+                               "all_instance_ids": True, "all_numbered_steps": True,
+                               "critical_printer_and_unverified_notices": True}
     write_json(OUT / "validation" / "pdf.json", {
-        "status": "PASS", "pages": page_count, "all_137_instance_ids_in_extracted_text": True,
-        "all_37_numbered_steps_in_extracted_text": True,
-        "critical_nozzle_not_sliced_and_gui_limitations_in_text": True,
-        "pdfinfo_readable": True, "fonts": "Chromium embedded/subset Japanese glyphs; font files not redistributed",
+        "status": "PASS", "languages": languages, "pages": len(data["steps"]) + 7,
+        "pdfinfo_readable": True, "fonts": "Chromium embedded/subset glyphs; font files not redistributed",
     })
 
 
@@ -128,11 +133,13 @@ def main():
     catalog = read_json(OUT / "data" / "catalog.json")
     reports = {}
     for filename in ("cad.json", "native-documents.json", "meshes-and-plates.json",
-                     "cad-drawings.json", "blender.json", "video.json", "browser.json", "pdf-generation.json"):
+                     "cad-drawings.json", "blender.json", "video.json", "browser.json", "pdf-generation.json",
+                     "pdf-generation.en.json", "captions.json"):
         report = read_json(OUT / "validation" / filename)
         assert report["status"] == "PASS", filename
         reports[filename] = report
     assert not reports["browser.json"]["smoke_only"]
+    assert reports["browser.json"]["languages"] == ["ja", "en"]
     assert reports["blender.json"]["render_output_relative"]
     assert read_json(OUT / "validation" / "lighting.json")["all_stills_refreshed"]
     assert reports["meshes-and-plates.json"]["assembly_bom_equals_3mf_equals_instances"] == len(data["instances"])
@@ -140,7 +147,8 @@ def main():
     atoms = audit_movie_container()
     source_copy()
     # Copy visual test evidence, never the source photograph or diagnostic app logs.
-    for filename in ("desktop-http-guide.png", "mobile-http-guide.png", "desktop-http-top.png", "offline-file-guide.png"):
+    for filename in ("desktop-http-guide.png", "mobile-http-guide.png", "desktop-http-top.png", "offline-file-guide.png",
+                     "desktop-http-en-guide.png", "mobile-http-en-top.png"):
         source = BUILD / "browser" / filename
         assert source.is_file()
         shutil.copyfile(source, OUT / "validation" / filename)
@@ -178,6 +186,7 @@ def main():
         assert previous["payload_sha256"] == digest, "Runtime/source payload changed after extracted ZIP test"
         offline = read_json(BUILD / "archive-browser.json")
         assert offline["status"] == "PASS" and not offline["smoke_only"]
+        assert offline["languages"] == ["ja", "en"]
         report["extracted_zip_browser"] = {
             "status": "PASS", "payload_sha256": digest, "file_protocol": True,
             "network_disabled": True, "checks": len(offline["checks"]),

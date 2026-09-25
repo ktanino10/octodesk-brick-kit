@@ -1,13 +1,18 @@
 {
-  "edition": "r1-public-1",
+  "edition": "r1-public-bilingual",
   "geometry_revision": "1.0.0",
   "authorized_on": "2026-09-25",
   "repository": "https://github.com/ktanino10/octodesk-brick-kit",
   "pages": "https://ktanino10.github.io/octodesk-brick-kit/",
-  "release_tag": "v1.0.0",
-  "release": "https://github.com/ktanino10/octodesk-brick-kit/releases/tag/v1.0.0",
+  "release_tag": "v1.0.1",
+  "release": "https://github.com/ktanino10/octodesk-brick-kit/releases/tag/v1.0.1",
   "archive_name": "octodesk-r1-offline.zip",
-  "archive_url": "https://github.com/ktanino10/octodesk-brick-kit/releases/download/v1.0.0/octodesk-r1-offline.zip",
+  "archive_url": "https://github.com/ktanino10/octodesk-brick-kit/releases/download/v1.0.1/octodesk-r1-offline.zip",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "english_pages": "https://ktanino10.github.io/octodesk-brick-kit/?lang=en",
   "source_visibility": "public",
   "scope": [
     "design-source",
@@ -15,7 +20,9 @@
     "native-cad",
     "renders",
     "animation",
-    "japanese-guide",
+    "bilingual-guide",
+    "bilingual-pdf",
+    "bilingual-subtitles",
     "offline-archive"
   ],
   "excluded": [

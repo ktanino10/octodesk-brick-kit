@@ -1,6 +1,8 @@
 # 机と猫耳のブロック・ジオラマ
 
-**[GitHub Pagesで組み立てる](https://ktanino10.github.io/octodesk-brick-kit/) · [オフライン一括ZIP](https://github.com/ktanino10/octodesk-brick-kit/releases/download/v1.0.0/octodesk-r1-offline.zip) · [Releaseとハッシュ](https://github.com/ktanino10/octodesk-brick-kit/releases/tag/v1.0.0)**
+**日本語 · [English README](README.en.md)**
+
+**[日本語の組立ガイド](https://ktanino10.github.io/octodesk-brick-kit/) · [English guide](https://ktanino10.github.io/octodesk-brick-kit/?lang=en) · [2言語オフラインZIP](https://github.com/ktanino10/octodesk-brick-kit/releases/download/v1.0.1/octodesk-r1-offline.zip) · [Releaseとハッシュ](https://github.com/ktanino10/octodesk-brick-kit/releases/tag/v1.0.1)**
 
 ![配布STLから生成した完成CG（実物写真ではありません）](dist/octodesk-r1/media/hero.png)
 
@@ -18,15 +20,20 @@
 
 | 内容 | ダウンロード |
 | --- | --- |
-| 日本語の寸法・断面・全工程 | [44ページPDF](https://ktanino10.github.io/octodesk-brick-kit/docs/assembly-manual.pdf) |
+| 寸法・断面・全工程 | [日本語PDF](https://ktanino10.github.io/octodesk-brick-kit/docs/assembly-manual.pdf) · [English PDF](https://ktanino10.github.io/octodesk-brick-kit/docs/assembly-manual.en.pdf)（各44ページ） |
 | 字幕付き組立動画 | [MP4 / H.264](https://ktanino10.github.io/octodesk-brick-kit/media/assembly.mp4) · [WebM / VP9](https://ktanino10.github.io/octodesk-brick-kit/media/assembly.webm) |
+| 英語字幕 | [SRT](https://ktanino10.github.io/octodesk-brick-kit/media/assembly.en.srt) · [VTT](https://ktanino10.github.io/octodesk-brick-kit/media/assembly.en.vtt) |
 | 印刷形状と数量 | [型別STL](dist/octodesk-r1/stl/) · [色別3MF](dist/octodesk-r1/plates/) · [試験片](dist/octodesk-r1/coupons/) · [BOM](dist/octodesk-r1/data/bom.csv) |
 | 編集用CAD | [完成配置FCStd](https://ktanino10.github.io/octodesk-brick-kit/cad/Octodesk-r1.FCStd) · [型ライブラリFCStd](https://ktanino10.github.io/octodesk-brick-kit/cad/Type-library.FCStd) · [STEP](https://ktanino10.github.io/octodesk-brick-kit/cad/Octodesk-r1.step) |
 | 編集可能なCG・動画シーン | [Blender](https://ktanino10.github.io/octodesk-brick-kit/cad/Octodesk-r1.blend) |
 | 印刷と組立の対応 | [双方向3Dガイド](https://ktanino10.github.io/octodesk-brick-kit/#guide) · [全slotと候補CSV](dist/octodesk-r1/data/plate-to-assembly.csv) |
-| 全ファイルを別PCへ | [オフラインZIP](https://github.com/ktanino10/octodesk-brick-kit/releases/download/v1.0.0/octodesk-r1-offline.zip) · [配布receipt](dist/release-receipt.json) |
+| 全ファイルを別PCへ | [2言語オフラインZIP](https://github.com/ktanino10/octodesk-brick-kit/releases/download/v1.0.1/octodesk-r1-offline.zip) · [配布receipt](dist/release-receipt.json) |
 
 ZIPを展開して `octodesk-r1/index.html` を開くと、ネットワークやサーバーなしでもガイドを操作できます。リポジトリをcloneした場合の入口は `dist/octodesk-r1/index.html` です。印刷順と組立順は別で、同形同色の部品は交換可能です。
+
+**「日本語 / English」の切替で、選択・組立状態・再生を保ちます。** 英語直接URLは `?lang=en`。ボタンだけでなく全37工程、部品の役割、色、印刷slotとの双方向対応、エラーと注意を英語化しています。数値・ID・ファイル名は共通データのままです。
+
+共通動画には**元の日本語焼込みが残ります**。英語はブラウザー字幕・下部の同期字幕・SRT/VTTとして追加しており、動画の元フレームを英語化したとは扱いません。どちらの言語もオフラインで動作します。公開済みv1.0.0のZIPは残し、2言語版はv1.0.1として新しいハッシュで配布します。
 
 ## 公開範囲と検査
 
@@ -38,7 +45,7 @@ ZIPを展開して `octodesk-r1/index.html` を開くと、ネットワークや
 
 ## 再生成
 
-`design/kit.json` を中心データとし、型・個体・工程・接続・色・数量を共有します。配置を改める場合は `scripts/design.py`、形状は `scripts/freecad_build.py` を変更し、関係する出力をすべて再生成してください。
+`design/kit.json` を中心データとし、型・個体・工程・接続・色・数量を共有します。英語の工程・役割・色は `design/translations.json`、静的UIの対訳は `web/index.html` にあります。配置を改める場合は `scripts/design.py`、形状は `scripts/freecad_build.py` を変更し、関係する出力をすべて再生成してください。言語・文書だけの変更ではCAD/レンダーを作り直さず、文書・viewer・ZIPの生成と検査だけを行います。
 
 ```sh
 python3 -m venv .venv
@@ -59,11 +66,11 @@ QT_QPA_PLATFORM=offscreen PYTHONPATH="$FREECAD_LIB:scripts" \
 "$BLENDER" --background --factory-startup --threads 2 \
   dist/octodesk-r1/cad/Octodesk-r1.blend --python scripts/verify_blender.py
 .venv/bin/python scripts/encode_movie.py
+.venv/bin/python scripts/prepare_publication.py
 .venv/bin/python scripts/build_docs.py
 node scripts/export_pdf.mjs
 npm run build:web
 npm run test:web
-.venv/bin/python scripts/prepare_publication.py
 .venv/bin/python scripts/package_release.py
 KIT_DIR="$PWD/build/archive-test/octodesk-r1" \
   BROWSER_REPORT="$PWD/build/archive-browser.json" npm run test:web

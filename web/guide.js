@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { STLLoader } from "three/addons/loaders/STLLoader.js";
+import { applyLanguage, lang, text, stepText, colorName, roleName } from "./i18n.js";
 
 const $ = (id) => document.getElementById(id);
 const D = window.OCTODESK_DATA;
@@ -12,11 +13,15 @@ const state = { count: 0, selected: null, plate: 0, slot: 1, explode: 0, playing
 const viewers = {};
 let selectedOutline;
 let animationHandle;
+let lastError;
+const subtitleTracks = new Map();
 
 function fail(error) {
-  stop();
+  state.playing = false;
+  state.motion = null;
+  lastError = error;
   $("load-error").hidden = false;
-  $("load-error").textContent = `3Dガイドを読み込めませんでした: ${error.message}。PDFとCSVは利用できます。`;
+  $("load-error").textContent = text("loadError", { detail: error.message });
   console.error(error);
 }
 
@@ -165,7 +170,7 @@ function buildPlate() {
     viewer.element.append(label);
     viewer.labels.push({ element: label, mesh, slot: slot.slot });
   }
-  $("plate-count").textContent = `${plate.slots.length}個 / NOT_SLICED`;
+  $("plate-count").textContent = `${text("parts", { n: plate.slots.length })} / NOT_SLICED`;
   fit(viewer);
 }
 
@@ -177,12 +182,13 @@ function updatePlateSelection() {
     mesh.visible = !$("isolate-part").checked || mesh.userData.slot === state.slot;
     mesh.material.emissive.setHex(mesh.userData.slot === state.slot ? 0x3a1300 : 0);
   }
-  $("slot-info").textContent = `${plate.file.split("/").at(-1)} / slot ${slot.slot}\n${slot.part} · ${K.colors[slot.color].name} / 同形同色 ${slot.candidate_instances.length}個`;
+  $("plate-count").textContent = `${text("parts", { n: plate.slots.length })} / NOT_SLICED`;
+  $("slot-info").textContent = `${plate.file.split("/").at(-1)} / slot ${slot.slot}\n${slot.part} · ${colorName(slot.color)} / ${text("equivalents", { n: slot.candidate_instances.length })}`;
   $("candidates").replaceChildren();
   for (const id of slot.candidate_instances) {
     const inst = instances.get(id);
     const button = document.createElement("button");
-    button.textContent = `${id} · 工程${inst.step}`;
+    button.textContent = `${id} · ${text("step", { n: inst.step })}`;
     button.className = id === state.selected ? "active" : "";
     button.addEventListener("click", () => { stop(); selectInstance(id, true); });
     $("candidates").append(button);
@@ -241,7 +247,7 @@ function renderAssembly() {
 }
 
 function updateInfo() {
-  $("assembly-count").textContent = `${state.count} / ${total}個`;
+  $("assembly-count").textContent = text("assembled", { n: state.count, total });
   $("progress").value = String(state.count);
   $("progress-label").textContent = `${state.count}/${total}`;
   $("explode-label").textContent = `${Math.round(state.explode * 100)}%`;
@@ -254,16 +260,18 @@ function updateInfo() {
   $("source-list").replaceChildren();
   if (!inst) {
     $("instance-info").textContent = state.count === total
-      ? `完成 / ${total}個・${K.steps.length}工程。部品をクリックすると取り出し元を表示します。`
-      : "0個配置済み / 空の机です。\n「次の1個」で O-001 の取り付けを始めます。";
+      ? text("complete", { total, steps: K.steps.length })
+      : text("empty", { first: K.instances[0].id });
     $("step-note").textContent = state.count === total
-      ? "現物の嵌合・保持力・転倒・耐久性は未評価です。"
-      : "台座の手前は−Y。最初の6枚は机に並べ、上段で連結します。";
+      ? text("physical")
+      : text("foundation");
     return;
   }
-  const step = K.steps[inst.step - 1];
-  $("instance-info").textContent = `${inst.id} / ${inst.part} / ${K.colors[inst.color].name} / 工程${inst.step}\n${inst.role} · 下角(${inst.anchor_mm.map((v) => v.toFixed(1)).join(", ")}) mm · Z回転${inst.rotation_deg}° · 上から↓`;
-  $("step-note").textContent = `${step.title}。${step.note}`;
+  const step = stepText(inst.step);
+  $("instance-info").textContent = `${inst.id} / ${inst.part} / ${colorName(inst.color)} / ${text("step", { n: inst.step })}\n${text("placement", {
+    role: roleName(inst.role), position: inst.anchor_mm.map((v) => v.toFixed(1)).join(", "), angle: inst.rotation_deg
+  })}`;
+  $("step-note").textContent = `${step.title}. ${step.note}`;
   const byFile = new Map();
   for (const source of D.manifest.instance_sources[inst.id]) {
     if (!byFile.has(source.file)) byFile.set(source.file, []);
@@ -316,8 +324,63 @@ function complete() {
   state.count = total; state.selected = null; state.explode = 0; $("explode").value = "0";
   $("dim-parts").checked = false;
   renderAssembly(); updateInfo(); fit(viewers.assembly);
-  $("instance-info").textContent = `完成 / ${total}個・${K.steps.length}工程。部品をクリックすると取り出し元を表示します。`;
-  $("step-note").textContent = "現物の嵌合・保持力・転倒・耐久性は未評価です。";
+}
+
+function updateCaption() {
+  const video = document.querySelector("video");
+  const cue = D.captions.find((item) => item.start <= video.currentTime && video.currentTime < item.end);
+  $("video-caption").textContent = cue ? cue[lang()] : text("captionIdle");
+}
+
+function initCaptions() {
+  const video = document.querySelector("video");
+  if (typeof window.VTTCue === "function") {
+    for (const language of ["ja", "en"]) {
+      const track = video.addTextTrack("subtitles", language === "en" ? "English" : "日本語", language);
+      for (const cue of D.captions) track.addCue(new VTTCue(cue.start, cue.end, cue[language]));
+      subtitleTracks.set(language, track);
+    }
+  }
+  for (const event of ["timeupdate", "seeking", "loadedmetadata"]) video.addEventListener(event, updateCaption);
+  for (const [language, track] of subtitleTracks) track.mode = language === lang() ? "showing" : "disabled";
+  updateCaption();
+}
+
+function refreshText() {
+  $("metrics").innerHTML = `<div><b>${D.catalog.assembly_size_mm.map((n) => Number(n.toFixed(1))).join(" × ")}</b><small>${text("dimensions")}</small></div><div><b>${total}</b><small>${text("types", { n: K.counts.assembly_types })}</small></div><div><b>${K.steps.length}</b><small>${text("colors", { n: K.counts.colors })}</small></div>`;
+  $("plate-select").replaceChildren();
+  $("plate-downloads").replaceChildren();
+  $("step-select").replaceChildren();
+  $("bom").querySelector("tbody").replaceChildren();
+  D.manifest.plates.forEach((plate, index) => {
+    const option = document.createElement("option"); option.value = String(index);
+    option.textContent = `${plate.file.split("/").at(-1)} (${text("parts", { n: plate.slots.length })})`;
+    $("plate-select").append(option);
+    const link = document.createElement("a"); link.href = plate.file; link.textContent = option.textContent; link.download = "";
+    $("plate-downloads").append(link);
+  });
+  $("plate-select").value = String(state.plate);
+  $("step-select").append(new Option(text("zero"), "0"));
+  for (const step of K.steps) $("step-select").append(new Option(`${step.number} · ${stepText(step.number).title}`, String(step.number)));
+  for (const row of K.bom) {
+    const tr = document.createElement("tr");
+    const a = document.createElement("a"); a.href = D.catalog.parts[row.part].stl; a.textContent = row.part;
+    const type = document.createElement("td"); type.append(a);
+    const color = document.createElement("td");
+    const swatch = document.createElement("span"); swatch.className = "swatch"; swatch.style.backgroundColor = K.colors[row.color].hex;
+    color.append(swatch, colorName(row.color));
+    const count = document.createElement("td"); count.textContent = String(row.quantity);
+    tr.append(type, color, count); $("bom").querySelector("tbody").append(tr);
+  }
+}
+
+function changeLanguage(language, updateUrl = true) {
+  applyLanguage(language, updateUrl);
+  refreshText();
+  if (lastError) $("load-error").textContent = text("loadError", { detail: lastError.message });
+  if (selectedOutline) { updatePlateSelection(); updateInfo(); }
+  for (const [id, track] of subtitleTracks) track.mode = id === language ? "showing" : "disabled";
+  updateCaption();
 }
 
 function tick(now) {
@@ -353,25 +416,14 @@ function tick(now) {
 }
 
 function init() {
-  $("metrics").innerHTML = `<div><b>${D.catalog.assembly_size_mm.map((n) => Number(n.toFixed(1))).join(" × ")}</b><small>完成寸法 mm（スタッド・耳を含む）</small></div><div><b>${total}</b><small>個 / ${K.counts.assembly_types}型</small></div><div><b>${K.steps.length}</b><small>工程 / ${K.counts.colors}色</small></div>`;
-  D.manifest.plates.forEach((plate, index) => {
-    const option = document.createElement("option"); option.value = String(index);
-    option.textContent = `${plate.file.split("/").at(-1)} (${plate.slots.length}個)`; $("plate-select").append(option);
-    const link = document.createElement("a"); link.href = plate.file; link.textContent = option.textContent; link.download = "";
-    $("plate-downloads").append(link);
-  });
-  $("step-select").append(new Option("0 · 空の机", "0"));
-  for (const step of K.steps) $("step-select").append(new Option(`${step.number} · ${step.title}`, String(step.number)));
-  for (const row of K.bom) {
-    const tr = document.createElement("tr");
-    const a = document.createElement("a"); a.href = D.catalog.parts[row.part].stl; a.textContent = row.part;
-    const type = document.createElement("td"); type.append(a);
-    const color = document.createElement("td");
-    const swatch = document.createElement("span"); swatch.className = "swatch"; swatch.style.backgroundColor = K.colors[row.color].hex;
-    color.append(swatch, K.colors[row.color].name);
-    const count = document.createElement("td"); count.textContent = String(row.quantity);
-    tr.append(type, color, count); $("bom").querySelector("tbody").append(tr);
+  applyLanguage();
+  refreshText();
+  initCaptions();
+  for (const button of document.querySelectorAll("[data-language]")) {
+    button.addEventListener("click", () => changeLanguage(button.dataset.language));
   }
+  window.addEventListener("popstate", () => changeLanguage(
+    new URLSearchParams(location.search).get("lang") === "en" ? "en" : "ja", false));
   $("progress").max = String(total);
   viewers.plate = createViewer("plate-viewport", "plate");
   viewers.assembly = createViewer("assembly-viewport", "assembly");
@@ -422,7 +474,7 @@ function init() {
   });
   document.addEventListener("visibilitychange", () => { if (document.hidden) stop(); });
   window.OCTODESK_APP = {
-    ready: true, getState: () => ({ ...state, motion: state.motion ? { ...state.motion } : null }),
+    ready: true, getState: () => ({ ...state, language: lang(), motion: state.motion ? { ...state.motion } : null }),
     getTransforms: () => viewers.assembly.meshes.map((m) => ({ id: m.userData.instance, visible: m.visible, position: m.position.toArray(), rotationZ: m.rotation.z })),
     projectedBounds: () => {
       const v = viewers.assembly, b = viewerBounds(v); v.camera.updateMatrixWorld();

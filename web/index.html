@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
   <link rel="icon" href="data:,">
-  <title>机と猫耳のブロック・ジオラマ | 組立ガイド</title>
+  <title data-en="Desk &amp; Cat-Eared Character | Brick Assembly Guide">机と猫耳のブロック・ジオラマ | 組立ガイド</title>
   <link rel="stylesheet" href="assets/style.css">
   <script defer src="assets/data.js"></script>
   <script defer src="assets/guide.js"></script>
@@ -13,92 +13,103 @@
 <body>
   <header class="site-header">
     <a class="brand" href="#top"><span class="mark" aria-hidden="true">▦</span> DESK / BRICK LAB</a>
-    <nav aria-label="ページ内"><a href="#guide">組み立てる</a><a href="#print">印刷する</a><a href="#downloads">保存する</a></nav>
-    <span class="edition">PUBLIC + OFFLINE · R1</span>
+    <nav aria-label="ページ内" data-en-aria-label="On this page"><a href="#guide" data-en="Assemble">組み立てる</a><a href="#print" data-en="Print">印刷する</a><a href="#downloads" data-en="Download">保存する</a></nav>
+    <div class="language-switch" aria-label="日本語 / English"><button id="language-ja" type="button" data-language="ja" lang="ja" aria-pressed="true">日本語</button><button id="language-en" type="button" data-language="en" lang="en" aria-pressed="false">English</button></div>
   </header>
   <main id="top">
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow">8 MM PITCH / A LITTLE DESK WORLD</p>
-        <h1>机と猫耳の<br>ブロック・ジオラマ</h1>
-        <p class="lead">白い机。黄色いマグ。<br>ひとつずつ積んでつくる、小さな作業部屋。</p>
+        <h1 data-en="A little desk.<br>A world in bricks.">机と猫耳の<br>ブロック・ジオラマ</h1>
+        <p class="lead" data-en="A white desk. A yellow mug.<br>Build a tiny workspace, one printed part at a time.">白い机。黄色いマグ。<br>ひとつずつ積んでつくる、小さな作業部屋。</p>
         <div class="metrics" id="metrics"></div>
-        <a class="primary link-button" href="#guide">部品を選んで、組み立てる <span>↘</span></a>
-        <p class="caption">この画像は配布STLと同じ形状のBlender完成CGです。実物写真ではありません。</p>
+        <a class="primary link-button" href="#guide" data-en="Choose a part. Start building. <span>↘</span>">部品を選んで、組み立てる <span>↘</span></a>
+        <p class="caption" data-en="Blender render of the actual supplied STL geometry. This is not a photograph of a printed model.">この画像は配布STLと同じ形状のBlender完成CGです。実物写真ではありません。</p>
       </div>
-      <div class="hero-image"><img src="media/hero.png" alt="緑の台座に白い机と椅子、黒い猫耳キャラクター、ベージュの顔、黄色いマグを配置した完成CG"></div>
+      <div class="hero-image"><img src="media/hero.png" alt="緑の台座に白い机と椅子、黒い猫耳キャラクター、ベージュの顔、黄色いマグを配置した完成CG" data-en-alt="Rendered diorama: green base, white desk and chair, black cat-eared character with a beige face, and a yellow mug"></div>
     </section>
 
-    <aside class="status-banner"><b>デジタル試作 / 現物未評価</b><span>P1S · <strong>0.2 mmノズル</strong> · PLA。全3MFは <strong>NOT_SLICED</strong>。まずゆるい試験片1組から。プレート・銘柄・実プロファイルは未確定です。</span></aside>
+    <aside class="status-banner"><b data-en="Digital prototype / physically untested">デジタル試作 / 現物未評価</b><span data-en="P1S · <strong>0.2 mm nozzle</strong> · PLA. Every 3MF is <strong>NOT_SLICED</strong>. Start with one loose-fit test pair. The actual plate, PLA brand and slicer profile are not confirmed.">P1S · <strong>0.2 mmノズル</strong> · PLA。全3MFは <strong>NOT_SLICED</strong>。まずゆるい試験片1組から。プレート・銘柄・実プロファイルは未確定です。</span></aside>
 
     <section id="guide" class="section">
-      <div class="section-head"><div><p class="eyebrow">01 / ASSEMBLY WORKSPACE</p><h2>刷ったこの部品を、どこへ。</h2></div><p>印刷プレートの順番と、組立工程の順番は別です。<br>同じ型・同じ色は交換可能。番号は案内用で実物には刻印していません。</p></div>
+      <div class="section-head"><div><p class="eyebrow">01 / ASSEMBLY WORKSPACE</p><h2 data-en="Where does this printed part go?">刷ったこの部品を、どこへ。</h2></div><p data-en="Print order is not assembly order.<br>Parts of the same type and color are interchangeable. IDs are guide labels, not physical markings.">印刷プレートの順番と、組立工程の順番は別です。<br>同じ型・同じ色は交換可能。番号は案内用で実物には刻印していません。</p></div>
       <div id="load-error" role="alert" hidden></div>
       <div class="workspace">
         <article class="panel">
-          <div class="panel-head"><span class="number">A</span><h3>印刷プレートから探す</h3><span id="plate-count"></span></div>
-          <div class="picker-row"><label>3MFファイル<select id="plate-select"></select></label><label class="slot-picker">slot<select id="slot-select"></select></label></div>
-          <div class="views" data-viewer="plate" aria-label="プレート視点">
-            <button data-view="iso">斜め</button><button data-view="top">上</button><button data-view="front">前</button><button data-view="right">右</button><button data-view="bottom">下面</button>
-            <label><input id="isolate-part" type="checkbox"> 選んだ1個を拡大</label>
+          <div class="panel-head"><span class="number">A</span><h3 data-en="Find it on a print plate">印刷プレートから探す</h3><span id="plate-count"></span></div>
+          <div class="picker-row"><label><span data-en="3MF file">3MFファイル</span><select id="plate-select"></select></label><label class="slot-picker">slot<select id="slot-select"></select></label></div>
+          <div class="views" data-viewer="plate" aria-label="プレート視点" data-en-aria-label="Print plate views">
+            <button data-view="iso" data-en="Angle">斜め</button><button data-view="top" data-en="Top">上</button><button data-view="front" data-en="Front">前</button><button data-view="right" data-en="Right">右</button><button data-view="bottom" data-en="Bottom">下面</button>
+            <label><input id="isolate-part" type="checkbox"><span data-en="Focus selected part"> 選んだ1個を拡大</span></label>
           </div>
-          <div id="plate-viewport" class="viewport"><div class="canvas-note">手前 = −Y / 256 mmベッド / 数字 = slot</div></div>
-          <div class="panel-body"><p id="slot-info" class="code-line"></p><p class="tiny">この型・色を使う全候補。押すと工程と位置を表示します。</p><div id="candidates" class="candidate-list"></div></div>
+          <div id="plate-viewport" class="viewport"><div class="canvas-note" data-en="Front = −Y / 256 mm bed / numbers = slots">手前 = −Y / 256 mmベッド / 数字 = slot</div></div>
+          <div class="panel-body"><p id="slot-info" class="code-line"></p><p class="tiny" data-en="Every matching assembly instance. Select one to see its step and position.">この型・色を使う全候補。押すと工程と位置を表示します。</p><div id="candidates" class="candidate-list"></div></div>
         </article>
         <article class="panel">
-          <div class="panel-head"><span class="number">B</span><h3>位置と向きを見て組む</h3><span id="assembly-count"></span></div>
-          <div class="picker-row"><label>組立工程<select id="step-select"></select></label></div>
-          <div class="views" data-viewer="assembly" aria-label="組立視点">
-            <button data-view="iso">斜め</button><button data-view="front">前</button><button data-view="right">右</button><button data-view="back">背面</button><button data-view="top">上</button><button data-view="bottom">下面</button>
-            <label><input id="dim-parts" type="checkbox" checked> 組立済みを淡く</label>
+          <div class="panel-head"><span class="number">B</span><h3 data-en="Place and orient the part">位置と向きを見て組む</h3><span id="assembly-count"></span></div>
+          <div class="picker-row"><label><span data-en="Assembly step">組立工程</span><select id="step-select"></select></label></div>
+          <div class="views" data-viewer="assembly" aria-label="組立視点" data-en-aria-label="Assembly views">
+            <button data-view="iso" data-en="Angle">斜め</button><button data-view="front" data-en="Front">前</button><button data-view="right" data-en="Right">右</button><button data-view="back" data-en="Back">背面</button><button data-view="top" data-en="Top">上</button><button data-view="bottom" data-en="Bottom">下面</button>
+            <label><input id="dim-parts" type="checkbox" checked><span data-en="Fade other parts"> 組立済みを淡く</span></label>
           </div>
-          <div id="assembly-viewport" class="viewport"><div class="canvas-note">キャラクターの顔 = +X（机側） / 回転・ズーム可</div></div>
-          <div class="panel-body"><p id="instance-info" class="code-line" aria-live="polite"></p><p id="step-note"></p><details><summary>選んだ個体の、すべての取り出し元</summary><div id="source-list"></div></details></div>
+          <div id="assembly-viewport" class="viewport"><div class="canvas-note" data-en="Face points +X (toward desk) / drag to rotate, zoom">キャラクターの顔 = +X（机側） / 回転・ズーム可</div></div>
+          <div class="panel-body"><p id="instance-info" class="code-line" aria-live="polite"></p><p id="step-note"></p><details><summary data-en="Every print source for this instance">選んだ個体の、すべての取り出し元</summary><div id="source-list"></div></details></div>
         </article>
       </div>
       <div class="transport">
         <div class="transport-main">
-          <button id="reset">空の机へ</button><button id="previous">1個戻る</button>
-          <button id="play" class="primary">▶ 再生</button><button id="pause">停止</button><button id="next">次の1個 →</button>
-          <button id="replay-step">この工程を再生</button><button id="complete">完成を見る</button>
-          <label class="speed-label">速さ<select id="speed"><option value="1300">ゆっくり</option><option value="750" selected>標準</option><option value="300">速い</option></select></label>
+          <button id="reset" data-en="Empty table">空の机へ</button><button id="previous" data-en="Previous part">1個戻る</button>
+          <button id="play" class="primary" data-en="▶ Play">▶ 再生</button><button id="pause" data-en="Pause">停止</button><button id="next" data-en="Next part →">次の1個 →</button>
+          <button id="replay-step" data-en="Replay this step">この工程を再生</button><button id="complete" data-en="Show complete">完成を見る</button>
+          <label class="speed-label"><span data-en="Speed">速さ</span><select id="speed"><option value="1300" data-en="Slow">ゆっくり</option><option value="750" selected data-en="Normal">標準</option><option value="300" data-en="Fast">速い</option></select></label>
         </div>
-        <label class="range-label">配置済みの個数 <output id="progress-label">0</output><input id="progress" type="range" min="0" value="0" step="1"></label>
-        <label class="range-label">分解表示 <output id="explode-label">0%</output><input id="explode" type="range" min="0" max="100" value="0" step="1"></label>
-        <p class="tiny">分解は工程群を上へ離す説明表示です。一斉に引き抜く実手順ではありません。0%で配布データの位置へ正確に戻ります。取り外しは逆順、マグより先に頭を外します。</p>
+        <label class="range-label"><span data-en="Parts placed">配置済みの個数</span><output id="progress-label">0</output><input id="progress" type="range" min="0" value="0" step="1"></label>
+        <label class="range-label"><span data-en="Exploded view">分解表示</span><output id="explode-label">0%</output><input id="explode" type="range" min="0" max="100" value="0" step="1"></label>
+        <p class="tiny" data-en="The exploded view raises step groups for explanation, not as a simultaneous physical removal procedure. At 0%, all parts return exactly to the supplied positions. Disassemble in reverse order; remove the head before the mug.">分解は工程群を上へ離す説明表示です。一斉に引き抜く実手順ではありません。0%で配布データの位置へ正確に戻ります。取り外しは逆順、マグより先に頭を外します。</p>
       </div>
     </section>
 
     <section id="print" class="section print-section">
-      <div class="section-head"><div><p class="eyebrow">02 / PRINT SMALL FIRST</p><h2>最初は、たった2個。</h2></div><p>デジタル検査と、実機の嵌合は別の確認です。<br>工具や強い力が必要なら、その先を印刷しないでください。</p></div>
+      <div class="section-head"><div><p class="eyebrow">02 / PRINT SMALL FIRST</p><h2 data-en="Start with just two parts.">最初は、たった2個。</h2></div><p data-en="Digital checks do not qualify physical fit.<br>Stop if insertion needs tools or significant force.">デジタル検査と、実機の嵌合は別の確認です。<br>工具や強い力が必要なら、その先を印刷しないでください。</p></div>
       <div class="trial-grid">
-        <article><span class="pill">FIRST</span><h3>ゆるい嵌合を確認</h3><p>FIT-M-D470（オス径4.70 mm）と FIT-F-CP12（メス半径クリアランス+0.12 mm）。1組だけを印刷し、軽い手の力で着座・取り外しできるか確認。</p><a href="coupons/01-loose-pair-NOT_SLICED.3mf" download>01 / 試験片の3MF ↓</a></article>
-        <article><span class="pill">THEN</span><h3>本番の形を少量で</h3><p>本番はオス径4.80 mm / メス半径+0.04 mmの未評価候補です。2×2と2×4を各2個で再確認。ゆるい試験片の合格を本番の合格へ読み替えないでください。</p><a href="coupons/02-representative-NOT_SLICED.3mf" download>02 / 代表部品の3MF ↓</a></article>
-        <article><span class="pill">NEXT</span><h3>台座の反りと継ぎ目</h3><p>8×8を2枚並べ、4×8を90°回して長辺をXへ向け、下段のX=64 mmの継ぎ目をまたいで載せます。その後に本番台座、机、残りを少量ずつ。</p><a href="coupons/03-base-joint-NOT_SLICED.3mf" download>03 / 継ぎ目試験の3MF ↓</a></article>
+        <article><span class="pill">FIRST</span><h3 data-en="Check the loose-fit pair">ゆるい嵌合を確認</h3><p data-en="FIT-M-D470 has a 4.70 mm male diameter; FIT-F-CP12 has +0.12 mm female radial clearance. Print one pair only and check seating and removal with gentle hand pressure.">FIT-M-D470（オス径4.70 mm）と FIT-F-CP12（メス半径クリアランス+0.12 mm）。1組だけを印刷し、軽い手の力で着座・取り外しできるか確認。</p><a href="coupons/01-loose-pair-NOT_SLICED.3mf" download data-en="01 / Loose-fit test 3MF ↓">01 / 試験片の3MF ↓</a></article>
+        <article><span class="pill">THEN</span><h3 data-en="Try the production shapes">本番の形を少量で</h3><p data-en="The production candidate uses a 4.80 mm male diameter and +0.04 mm female radial clearance. Test two 2×2 and two 2×4 parts. A successful loose pair does not qualify the tighter production parts.">本番はオス径4.80 mm / メス半径+0.04 mmの未評価候補です。2×2と2×4を各2個で再確認。ゆるい試験片の合格を本番の合格へ読み替えないでください。</p><a href="coupons/02-representative-NOT_SLICED.3mf" download data-en="02 / Representative-part 3MF ↓">02 / 代表部品の3MF ↓</a></article>
+        <article><span class="pill">NEXT</span><h3 data-en="Check the base joint and warping">台座の反りと継ぎ目</h3><p data-en="Place two 8×8 plates side by side. Rotate a 4×8 plate by 90° so its long edge runs along X, bridging the lower seam at X=64 mm. Then print the full base, desk and remaining parts in small batches.">8×8を2枚並べ、4×8を90°回して長辺をXへ向け、下段のX=64 mmの継ぎ目をまたいで載せます。その後に本番台座、机、残りを少量ずつ。</p><a href="coupons/03-base-joint-NOT_SLICED.3mf" download data-en="03 / Base-joint test 3MF ↓">03 / 継ぎ目試験の3MF ↓</a></article>
       </div>
-      <details class="guidance" open><summary>スライサーで必ず確認するところ</summary><p>ZIPは先に展開。3MFを「形状」として読み込み、P1S・0.2 mmノズル・使用するPLA/プレートの実プロファイルを選びます。STLは単位mm・100%。同じ個体をSTLと3MFから二重に読み込まないでください。</p><p>下面は開いた壁・筒・リブです。下面をベッドへ向け、受け穴にbrimやサポートを埋めないこと。初層の入口、屋根の最初のブリッジ（設計上6.8 mm以下）、スタッド、マグの取っ手の5.2 mmブリッジ、キーの0.7 mm浮彫をレイヤープレビューで確認します。支持材の要否は実スライスで判断します。</p><p>色ごとに単色印刷でき、AMSは必須ではありません。配置は部品間10 mm、ベッド端10 mmの名目余白で、片側4 mmまでのbrim余地を確保しています。実プレートの除外領域や自動配置変更は別途確認が必要です。ノズル・PLA色を変えた時も嵌合を再確認してください。</p><p><b>中止条件：</b>入口の閉塞、着座しない、白化・割れ、保持不足、反り、強い力・工具が必要。負のクリアランス候補は意図的干渉用で初回には使いません。マグは展示部品で、飲食用ではありません。小部品を含むため乳幼児向け玩具ではありません。</p></details>
+      <details class="guidance" open><summary data-en="What to inspect in the slicer">スライサーで必ず確認するところ</summary>
+        <p data-en="Extract the ZIP first. Import each 3MF as geometry and select the real P1S / 0.2 mm nozzle / PLA / plate profile. Import STL in millimeters at 100%. Do not load the same part twice from both STL and 3MF.">ZIPは先に展開。3MFを「形状」として読み込み、P1S・0.2 mmノズル・使用するPLA/プレートの実プロファイルを選びます。STLは単位mm・100%。同じ個体をSTLと3MFから二重に読み込まないでください。</p>
+        <p data-en="Print the open underside downward: walls, tubes and ribs remain open. Do not fill receivers with brim or support. Inspect the first-layer openings, roof bridges (design spans up to 6.8 mm), studs, the mug-handle bridge (5.2 mm), and key relief (0.7 mm) in the actual layer preview. Decide support needs from a real slice.">下面は開いた壁・筒・リブです。下面をベッドへ向け、受け穴にbrimやサポートを埋めないこと。初層の入口、屋根の最初のブリッジ（設計上6.8 mm以下）、スタッド、マグの取っ手の5.2 mmブリッジ、キーの0.7 mm浮彫をレイヤープレビューで確認します。支持材の要否は実スライスで判断します。</p>
+        <p data-en="Print each color separately; AMS is not required. Nominal gaps are 10 mm between parts and 10 mm from bed edges, allowing up to 4 mm of brim per side. Actual plate exclusion zones and slicer rearrangements still need checking. Recheck fit after changing nozzle or PLA color.">色ごとに単色印刷でき、AMSは必須ではありません。配置は部品間10 mm、ベッド端10 mmの名目余白で、片側4 mmまでのbrim余地を確保しています。実プレートの除外領域や自動配置変更は別途確認が必要です。ノズル・PLA色を変えた時も嵌合を再確認してください。</p>
+        <p data-en="<b>Stop if:</b> openings are blocked, parts will not seat, stress whitening or cracks appear, retention is weak, parts warp, or tools/force are needed. Negative-clearance candidates intentionally interfere and are not for the first test. The mug is a display part, not for food or drink. Small parts make this unsuitable as a toy for infants or toddlers."><b>中止条件：</b>入口の閉塞、着座しない、白化・割れ、保持不足、反り、強い力・工具が必要。負のクリアランス候補は意図的干渉用で初回には使いません。マグは展示部品で、飲食用ではありません。小部品を含むため乳幼児向け玩具ではありません。</p>
+      </details>
     </section>
 
     <section class="section media-section">
-      <div class="section-head"><div><p class="eyebrow">03 / THE WHOLE BUILD</p><h2>工程を、形でたどる。</h2></div><a href="docs/assembly-manual.pdf">日本語の図面・組立PDF ↓</a></div>
-      <div class="media-grid"><video controls preload="metadata" poster="media/hero.png"><source src="media/assembly.mp4" type="video/mp4"><source src="media/assembly.webm" type="video/webm"></video><div><img src="media/exploded.png" alt="工程群を離した実メッシュ分解CG" loading="lazy"><p class="caption">同じSTL・個体ID・配置・工程から生成。静止画はBlender EEVEE、動画はBlender Workbenchの実レンダーです。日本語の工程字幕は映像に組み込んでいます。</p></div></div>
-      <p class="caption"><a href="media/assembly.mp4" download>字幕付きMP4（H.264）</a> / <a href="media/assembly.webm" download>WebM互換版（VP9）</a>。H.264非対応のブラウザーはWebMを再生します。</p>
+      <div class="section-head"><div><p class="eyebrow">03 / THE WHOLE BUILD</p><h2 data-en="Follow each step in motion.">工程を、形でたどる。</h2></div><a href="docs/assembly-manual.pdf" data-manual-link data-en="English drawings &amp; assembly PDF ↓">日本語の図面・組立PDF ↓</a></div>
+      <div class="media-grid"><div><video controls preload="metadata" poster="media/hero.png"><source src="media/assembly.mp4" type="video/mp4"><source src="media/assembly.webm" type="video/webm"></video><div id="video-caption" class="video-caption" aria-live="off"></div></div><div><img src="media/exploded.png" alt="工程群を離した実メッシュ分解CG" data-en-alt="Exploded view rendered from the distributed meshes" loading="lazy"><p class="caption" data-en="Generated from the same STL geometry, IDs, transforms and steps. Stills use Blender EEVEE; the animation uses Blender Workbench. The shared video retains its original baked-in Japanese header. English subtitles and the synchronized caption below are added without rerendering the geometry.">同じSTL・個体ID・配置・工程から生成。静止画はBlender EEVEE、動画はBlender Workbenchの実レンダーです。共通動画には元の日本語焼込みが残ります。形状を再レンダーせず、英語字幕と下の同期字幕を追加しています。</p></div></div>
+      <p class="caption"><a href="media/assembly.mp4" download data-en="Shared MP4 (H.264)">共通MP4（H.264）</a> / <a href="media/assembly.webm" download data-en="WebM fallback (VP9)">WebM互換版（VP9）</a> / <a href="media/assembly.srt" data-subtitle-link download data-en="English subtitles (SRT)">日本語字幕（SRT）</a><br><span data-en="The browser selects WebM if H.264 is unsupported. Subtitles work offline and follow the selected language; the original Japanese video header is not translated.">H.264非対応のブラウザーはWebMを再生します。字幕はオフラインでも言語切替に連動します。元動画の日本語焼込み自体は翻訳していません。</span></p>
     </section>
 
     <section id="downloads" class="section">
-      <div class="section-head"><div><p class="eyebrow">04 / KEEP THE KIT</p><h2>図面も、部品も、手元に。</h2></div><p>オフラインZIPを展開すれば、ネット接続なしで使えます。<br><a href="https://github.com/ktanino10/octodesk-brick-kit/releases/download/v1.0.0/octodesk-r1-offline.zip">一括ZIPを保存 ↓</a> / <a href="https://github.com/ktanino10/octodesk-brick-kit">設計ソースを見る ↗</a></p></div>
+      <div class="section-head"><div><p class="eyebrow">04 / KEEP THE KIT</p><h2 data-en="Keep the files. Build anywhere.">図面も、部品も、手元に。</h2></div><p><span data-en="Extract the bilingual ZIP to use it without a network.">2言語版ZIPを展開すれば、ネット接続なしで使えます。</span><br><a href="https://github.com/ktanino10/octodesk-brick-kit/releases/download/v1.0.1/octodesk-r1-offline.zip" data-en="Download the complete ZIP ↓">一括ZIPを保存 ↓</a> / <a href="https://github.com/ktanino10/octodesk-brick-kit" data-en="View design source ↗">設計ソースを見る ↗</a></p></div>
       <div class="download-grid">
-        <a href="cad/Octodesk-r1.FCStd"><small>NATIVE CAD</small><b>FreeCAD · 完成配置と工程グループ</b><span>FCStd ↓</span></a>
-        <a href="cad/Octodesk-r1.step"><small>CAD EXCHANGE</small><b>完成配置の独立ソリッド</b><span>STEP ↓</span></a>
-        <a href="cad/Octodesk-r1.blend"><small>EDITABLE SCENE</small><b>完成CGと工程アニメーション</b><span>Blender ↓</span></a>
-        <a href="docs/assembly-manual.pdf"><small>PRINTABLE GUIDE</small><b>寸法・工程・印刷対応表</b><span>日本語PDF ↓</span></a>
-        <a href="data/bom.csv"><small>BILL OF MATERIALS</small><b>型 × 色 × 必要数</b><span>CSV ↓</span></a>
-        <a href="data/plate-to-assembly.csv"><small>PRINT ↔ ASSEMBLY</small><b>全slotと全組立候補</b><span>CSV ↓</span></a>
+        <a href="cad/Octodesk-r1.FCStd"><small>NATIVE CAD</small><b data-en="FreeCAD · positioned parts and step groups">FreeCAD · 完成配置と工程グループ</b><span>FCStd ↓</span></a>
+        <a href="cad/Octodesk-r1.step"><small>CAD EXCHANGE</small><b data-en="Independent solids in assembly position">完成配置の独立ソリッド</b><span>STEP ↓</span></a>
+        <a href="cad/Octodesk-r1.blend"><small>EDITABLE SCENE</small><b data-en="Completed render and step animation">完成CGと工程アニメーション</b><span>Blender ↓</span></a>
+        <a href="docs/assembly-manual.pdf" data-manual-link><small>PRINTABLE GUIDE</small><b data-en="Dimensions, steps and print mapping">寸法・工程・印刷対応表</b><span data-en="English PDF ↓">日本語PDF ↓</span></a>
+        <a href="data/bom.csv"><small>BILL OF MATERIALS</small><b data-en="Type × color × required quantity">型 × 色 × 必要数</b><span>CSV ↓</span></a>
+        <a href="data/plate-to-assembly.csv"><small>PRINT ↔ ASSEMBLY</small><b data-en="Every slot and interchangeable instance">全slotと全組立候補</b><span>CSV ↓</span></a>
       </div>
-      <details class="guidance"><summary>8枚の本番3MFと型別STL・数量</summary><div id="plate-downloads" class="file-list"></div><div class="table-scroll"><table id="bom"><thead><tr><th>型ID / STL</th><th>色</th><th>必要数</th></tr></thead><tbody></tbody></table></div></details>
-      <details class="guidance"><summary>機械可読データ / デジタル検査の範囲</summary><p><a href="data/kit.json">設計・個体・工程・接続 JSON</a> / <a href="data/catalog.json">実CADカタログ</a> / <a href="data/print-manifest.json">印刷マニフェスト</a> / <a href="validation/report.json">検査結果の統合レポート</a> / <a href="cad/Type-library.FCStd">別配置の型ライブラリFCStd</a></p><p>正体積・単一ソリッド、native再読込、STEP対応、STL manifold/法線/寸法、意図しない体積干渉、上方の挿入経路、接続グラフ、数量一致、3MF配置、ブラウザーとオフライン動作を対象にしています。デジタル合格は実スライスや保持力・強度・反り・転倒・耐久試験の代用ではありません。</p><p>FreeCADネイティブは形状・位置・工程・色名/PartColor属性を保存して再読込済みです。offscreen GUI起動が止まったため、FreeCAD画面上の表示色は未確認です。既定の灰色で表示される場合は、色の確認にこのガイドまたはBlenderを使ってください。</p></details>
+      <p><a href="docs/assembly-manual.pdf" lang="ja">日本語 PDF</a> / <a href="docs/assembly-manual.en.pdf" lang="en">English PDF</a></p>
+      <details class="guidance"><summary data-en="8 production 3MF plates, STL types and quantities">8枚の本番3MFと型別STL・数量</summary><div id="plate-downloads" class="file-list"></div><div class="table-scroll"><table id="bom"><thead><tr><th data-en="Type ID / STL">型ID / STL</th><th data-en="Color">色</th><th data-en="Quantity">必要数</th></tr></thead><tbody></tbody></table></div></details>
+      <details class="guidance"><summary data-en="Machine-readable data / scope of digital checks">機械可読データ / デジタル検査の範囲</summary><p><a href="data/kit.json" data-en="Design, instances, steps and connections">設計・個体・工程・接続 JSON</a> / <a href="data/catalog.json" data-en="Measured CAD catalog">実CADカタログ</a> / <a href="data/print-manifest.json" data-en="Print manifest">印刷マニフェスト</a> / <a href="validation/report.json" data-en="Verification report">検査結果の統合レポート</a> / <a href="cad/Type-library.FCStd" data-en="Separate native type library">別配置の型ライブラリFCStd</a></p>
+        <p data-en="Checks cover positive-volume single solids, native reopening, STEP correspondence, STL manifoldness/normals/dimensions, unintended volume interference, vertical insertion paths, support connections, quantities, 3MF placement, browser use and offline operation. Digital success does not replace actual slicing or fit, retention, strength, warping, tip-over and durability tests.">正体積・単一ソリッド、native再読込、STEP対応、STL manifold/法線/寸法、意図しない体積干渉、上方の挿入経路、接続グラフ、数量一致、3MF配置、ブラウザーとオフライン動作を対象にしています。デジタル合格は実スライスや保持力・強度・反り・転倒・耐久試験の代用ではありません。</p>
+        <p data-en="FreeCAD native geometry, positions, steps, color names and PartColor attributes were saved and reopened. Only GUI display colors are unverified because isolated offscreen GUI startup stalled. If FreeCAD shows default gray, use this guide or Blender to identify colors. Native object labels may retain Japanese; IDs and the bilingual guide provide the same mapping.">FreeCADネイティブは形状・位置・工程・色名/PartColor属性を保存して再読込済みです。offscreen GUI起動が止まったため、FreeCAD画面上の表示色は未確認です。既定の灰色で表示される場合は、色の確認にこのガイドまたはBlenderを使ってください。ネイティブ内部のラベルは日本語のままですが、IDは2言語ガイドと対応します。</p>
+      </details>
     </section>
   </main>
-  <footer><p><b>個人用・非公式の独立設計。</b> 市販品との互換保証やメーカーの承認はありません。参考写真・箱・公式ロゴ・個人情報は公開物に含めていません。プリンター送信・印刷開始は行っていません。</p><p>この作品の設計と生成物を、承認済みの<a href="https://github.com/ktanino10/octodesk-brick-kit">Publicリポジトリ</a>・GitHub Pages・<a href="https://github.com/ktanino10/octodesk-brick-kit/releases/tag/v1.0.0">Release</a>で配布します。公開によって包括的な再利用ライセンスを付与するものではありません。Three.jsはMITライセンス。<a href="licenses/THREE-LICENSE.txt">ライセンス</a> / <a href="docs/notices.html">出典・利用上の注意</a></p></footer>
+  <footer><p data-en="<b>Independent, unofficial personal display design.</b> No commercial-brick compatibility guarantee or manufacturer endorsement. The reference photo, box, official logos and personal information are not included. No printer transmission or print start has been performed."><b>個人用・非公式の独立設計。</b> 市販品との互換保証やメーカーの承認はありません。参考写真・箱・公式ロゴ・個人情報は公開物に含めていません。プリンター送信・印刷開始は行っていません。</p>
+    <p><span data-en="Source and outputs are distributed through the approved">この作品の設計と生成物を、承認済みの</span> <a href="https://github.com/ktanino10/octodesk-brick-kit" data-en="public repository">Publicリポジトリ</a> · GitHub Pages · <a href="https://github.com/ktanino10/octodesk-brick-kit/releases/tag/v1.0.1">Release</a>.<br><span data-en="Public access does not grant a blanket reuse license. Three.js is MIT-licensed.">公開によって包括的な再利用ライセンスを付与するものではありません。Three.jsはMITライセンス。</span> <a href="licenses/THREE-LICENSE.txt" data-en="License">ライセンス</a> / <a href="docs/notices.html" data-notices-link data-en="Sources and notices">出典・利用上の注意</a></p>
+  </footer>
 </body>
 </html>

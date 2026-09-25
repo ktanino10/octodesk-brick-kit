@@ -10,7 +10,7 @@ from common import ROOT, OUT, BUILD, read_json, sha256, write_json
 from package_release import check_links, source_copy
 from publication import audit_file, config
 
-ROOT_FILES = {".gitattributes", ".gitignore", "README.md", "NOTICE", "requirements.txt", "package.json", "package-lock.json"}
+ROOT_FILES = {".gitattributes", ".gitignore", "README.md", "README.en.md", "NOTICE", "requirements.txt", "package.json", "package-lock.json"}
 SOURCE_DIRS = {"scripts", "tests", "web", "design"}
 SITE_DIRS = {"assets", "cad", "coupons", "data", "docs", "licenses", "media", "plates", "stl", "validation"}
 FORBIDDEN_PARTS = {".venv", "node_modules", "__pycache__", ".git", ".copilot", ".local", "build", "attachments"}
@@ -85,6 +85,13 @@ def main():
     for text in ("NOT_SLICED", "0.2 mm", "現物", "FreeCAD", "表示色は未確認"):
         assert text in landing, f"Missing limitation: {text}"
     assert config()["archive_url"] in landing and config()["repository"] in landing
+    assert 'id="language-en"' in landing and 'id="language-ja"' in landing
+    locale = read_json(ROOT / "design" / "translations.json")["en"]
+    data = read_json(OUT / "data" / "kit.json")
+    assert set(locale["steps"]) == {str(s["number"]) for s in data["steps"]}
+    assert set(locale["roles"]) == {i["role"] for i in data["instances"]}
+    assert (OUT / "docs" / "assembly-manual.en.pdf").is_file()
+    assert (OUT / "media" / "assembly.en.srt").is_file()
     assert not re.search(r'(?:src|href)=["\']/(?!/)', landing), "Root-absolute website path"
     report = {"status": "PASS", "public_candidate_files": len(files), "staged": args.staged,
               "geometry_lock_files": len(lock["files"]), "geometry_byte_identical_to_local_r1": True,

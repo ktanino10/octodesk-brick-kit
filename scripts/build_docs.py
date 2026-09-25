@@ -28,7 +28,7 @@ def page(title, body, number):
     return f'<section class="page"><p class="eyebrow">DESK / BRICK LAB · R1 · DIGITAL PROTOTYPE</p><h2>{title}</h2>{body}<div class="footer">{number} / 単位mm・縮尺は印刷時に変わります。現物未評価 / オリジナル写真・ロゴは非同梱</div></section>'
 
 
-def diagram(data, catalog, number, front=False):
+def diagram(data, catalog, number, front=False, language="ja"):
     instances = [i for i in data["instances"] if i["step"] <= number]
     if front:
         viewbox = "-15 -145 220 166"
@@ -50,7 +50,11 @@ def diagram(data, catalog, number, front=False):
             label = inst["id"].split("-")[1]
             labels.append(f'<g><rect x="{xx + ww/2 - 5.5}" y="{yy + hh/2 - 2.5}" width="11" height="5" rx="1.4" fill="#b95429"/><text x="{xx + ww/2}" y="{yy + hh/2 + 1.3}" font-size="3.5" fill="white" text-anchor="middle">{label}</text></g>')
     title = "正面（−Yから）/ X→, Z↑" if front else "上面 / X→, Y↑"
-    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{viewbox}"><rect x="-15" y="-145" width="220" height="180" fill="#f7f8f4"/><text x="0" y="-132" font-size="5">{title}</text>{"".join(paths + labels)}<text x="0" y="14" font-size="4">配置図：外接枠 / 橙枠と番号=今回追加 / 薄灰=組立済み</text></svg>'
+    note = "配置図：外接枠 / 橙枠と番号=今回追加 / 薄灰=組立済み"
+    if language == "en":
+        title = "FRONT (from −Y) / X→, Z↑" if front else "TOP / X→, Y↑"
+        note = "Bounding boxes: orange = added now / pale gray = already placed"
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{viewbox}"><rect x="-15" y="-145" width="220" height="180" fill="#f7f8f4"/><text x="0" y="-132" font-size="5">{title}</text>{"".join(paths + labels)}<text x="0" y="14" font-size="{3.2 if language == "en" else 4}">{note}</text></svg>'
 
 
 def main():
@@ -67,6 +71,7 @@ def main():
 <p>写真の机・椅子・黒い猫耳キャラクター・淡いベージュの無地の顔・黄色いマグを、分割印刷して積む独立設計です。8 mmピッチ、本体9.6 mm、プレート3.2 mm。箱・印字・公式ロゴは作りません。</p>
 <p class="note"><b>P1S · 0.2 mmノズル · PLA / NOT_SLICED</b><br>デジタル試作です。実機の嵌合・反り・保持・強度・転倒・耐久性は未評価。プレート・PLA銘柄・実プロファイルは未確認。全数印刷の前に試験片を確認してください。</p>
 <p>このPDFの図はCGまたはCAD投影・断面、あるいは明記した外接枠配置図です。実物写真ではありません。番号は案内用で、部品に刻印されていません。同じ型・色は交換可能です。</p>
+<p><a href="assembly-manual.en.pdf">English PDF</a> / 対話ガイドは「日本語 / English」で状態を保って切替できます。動画の日本語焼込みは残し、英語の同期字幕とSRT/VTTを同梱しています。</p>
 """, 1))
     pages.append(page("まず試す / 印刷と組立は別の順序", """
 <h3>1. ゆるい1組だけ</h3><p class="code">coupons/01-loose-pair-NOT_SLICED.3mf</p>
@@ -139,6 +144,10 @@ def main():
 <p>全3MFはNOT_SLICED。対象はP1S / 0.2 mmノズル / PLAですが、実プロファイル・プレート・色別材料条件、実スライス・嵌合・強度・安定性は未評価です。プリンターへの送信・印刷開始は実行していません。</p><p>FreeCADの形状・位置・工程・色属性はheadlessで保存・再読込済みですが、offscreen GUI起動の停止によりネイティブ画面の表示色は未確認です。既存アプリの文書は操作していません。</p><p><a href="../index.html">ガイドに戻る</a></p></html>"""
     (docs / "notices.html").write_text(notices, encoding="utf-8")
     print("JAPANESE_MANUAL_HTML", len(pages), "logical pages")
+    from english_docs import build_english
+    from build_captions import build_captions
+    build_english(data, catalog, manifest, STYLE, diagram)
+    build_captions()
 
 
 if __name__ == "__main__":

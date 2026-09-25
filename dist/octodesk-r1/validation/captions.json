@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "steps": 37,
+  "cues": 39,
+  "instance_ids_from_canonical_steps": true,
+  "original_baked_in_language": "ja",
+  "english_provided_as": [
+    "synchronized guide text",
+    "native text track",
+    "SRT",
+    "VTT"
+  ],
+  "video_rerendered": false,
+  "video_hashes": {
+    "assembly.mp4": "07d5a464bfddd9a55693a6d09bd95a2d971d52ea8f9b165e7d9bc131e72b7c94",
+    "assembly.webm": "0a604c5cfcfd3dcd2a5ab20bc7214eb3d55b3bf7b65c881faad4d814a7d31785"
+  }
+}

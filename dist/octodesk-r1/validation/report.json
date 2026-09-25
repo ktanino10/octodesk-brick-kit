@@ -1,18 +1,23 @@
 {
   "revision": "1.0.0",
   "digital_status": "PASS_WITH_DECLARED_LIMITATIONS",
-  "checked_at": "2026-09-25T12:37:52.319186+00:00",
+  "checked_at": "2026-09-25T13:10:41.662323+00:00",
   "units": "mm",
   "publication": {
-    "edition": "r1-public-1",
+    "edition": "r1-public-bilingual",
     "geometry_revision": "1.0.0",
     "authorized_on": "2026-09-25",
     "repository": "https://github.com/ktanino10/octodesk-brick-kit",
     "pages": "https://ktanino10.github.io/octodesk-brick-kit/",
-    "release_tag": "v1.0.0",
-    "release": "https://github.com/ktanino10/octodesk-brick-kit/releases/tag/v1.0.0",
+    "release_tag": "v1.0.1",
+    "release": "https://github.com/ktanino10/octodesk-brick-kit/releases/tag/v1.0.1",
     "archive_name": "octodesk-r1-offline.zip",
-    "archive_url": "https://github.com/ktanino10/octodesk-brick-kit/releases/download/v1.0.0/octodesk-r1-offline.zip",
+    "archive_url": "https://github.com/ktanino10/octodesk-brick-kit/releases/download/v1.0.1/octodesk-r1-offline.zip",
+    "languages": [
+      "ja",
+      "en"
+    ],
+    "english_pages": "https://ktanino10.github.io/octodesk-brick-kit/?lang=en",
     "source_visibility": "public",
     "scope": [
       "design-source",
@@ -20,7 +25,9 @@
       "native-cad",
       "renders",
       "animation",
-      "japanese-guide",
+      "bilingual-guide",
+      "bilingual-pdf",
+      "bilingual-subtitles",
       "offline-archive"
     ],
     "excluded": [
@@ -56,7 +63,9 @@
     "blender.json": "PASS",
     "video.json": "PASS",
     "browser.json": "PASS",
-    "pdf-generation.json": "PASS"
+    "pdf-generation.json": "PASS",
+    "pdf-generation.en.json": "PASS",
+    "captions.json": "PASS"
   },
   "pdf_pages": 44,
   "movie_faststart_atoms": [
@@ -104,9 +113,9 @@
   "first_print": "coupons/01-loose-pair-NOT_SLICED.3mf",
   "extracted_zip_browser": {
     "status": "PASS",
-    "payload_sha256": "93a11ede0bca8fc788d5ae7afc141e07e5a30f101d50b452fc720b24bed49804",
+    "payload_sha256": "12d26df4c8661754f4002bd0657d133683b619eb1444ba03de4d6f68c0cdbb81",
     "file_protocol": true,
     "network_disabled": true,
-    "checks": 22
+    "checks": 58
   }
 }
